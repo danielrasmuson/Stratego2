@@ -23,6 +23,7 @@ body{
 #playingField ul li{
     display: inline;
     padding-right: 52px;
+    
 }
 #playingField ul li img{
     padding-left: 0px;
