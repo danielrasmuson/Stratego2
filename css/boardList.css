@@ -7,8 +7,8 @@ body{
 #board{
     width: 1000px;
     height: 1000px;
-    margin-right: auto;
-    margin-left: auto;
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
     z-index: -1;
     position: absolute;
 }
@@ -16,23 +16,17 @@ body{
     width: 1028px;
 }
 #playingField ul{
-    list-style: none;
-    padding-left: 0px;
+    /*list-style: none;*/
     padding-left: 28px;
     margin-top: 0px;
 }
 #playingField ul li{
-    
-    /*padding-right: 50px;*/
-    /*width: 100px;*/
-    /*height: 100px;*/
-    display: block;
     display: inline;
     padding-right: 52px;
-    /*background-color: red;*/
 }
 #playingField ul li img{
     padding-left: 0px;
+    /*padding-right: 52px;*/
     padding-top: 15px;
     padding-bottom: 15px;
     width: 44px;
