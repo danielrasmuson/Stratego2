@@ -26,12 +26,11 @@ function setupClick(){
 }
 
 window.onload=function(){
-
     // // ENABLE START GAME BUTTON RETRIEVE FROM SETUP.HTML
     //var setupResults = localStorage.getItem('testObject')
     //squareList.innerHTML = setupResults;
 
-    flipSinglePiece("red5-67");
+    // flipSinglePiece("red5-67");
     localStorage.setItem('turn', "blue");
     /*squareList.onclick=function(e){
         deleteAllDots();
