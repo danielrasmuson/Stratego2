@@ -1,10 +1,3 @@
-<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-<!-- This is Nate's Awesome Code that he just pasted in -->
-<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-
-
-
-<script>
 window.onload=function(){
 	var squareList=document.getElementById('squareList');
 	var pieceHolder =document.getElementById('pieceHolder')
@@ -319,9 +312,4 @@ function sortList(ul){
   		new_ul.appendChild(redlis[l-40])
 
     ul.parentNode.replaceChild(new_ul, ul);
-}	
-
-/*function submitchecker(){  
- }
-*/
-// </script>
+}
