@@ -1,18 +1,3 @@
-// within the list findout what list number the user clicked on
-// -- waht are proposed soultion is -- from the element number we get from the ID red9-87
-// for example 87 we then pull the elements around it to see what they are...
-// the next questions would be how to we pull an element from its position in list into a variable
-
-// var lItems = document.getElementsByTagName("ul").getElementsByTagName("li");
-// lItems[2].innerHTML = "<a title='Two'>----NEW LIST ITEM CHANGED-----</a>";
-
-// http://stackoverflow.com/questions/923025/how-to-select-2nd-li-element-using-javascript
-
-
-// Retrieve the object from storage
-
-
-
 function setupClick(){
     "use strict";
     var squareList=document.getElementById("squareList");
@@ -34,11 +19,6 @@ window.onload=function(){
 
     // flipSinglePiece("red5-67");
     "use strict"; localStorage.setItem("turn", "blue");
-    /*squareList.onclick=function(e){
-        deleteAllDots();
-        if(colorOfClick(e.target.id) == localStorage.getItem('turn'))
-            posmoves(e.target.id);
-    }*/
     setupClick();
 };
 
@@ -48,8 +28,6 @@ function posmoves(pieceName){
     var square = pieceName.split("-")[1]; //the position on the board
     square = parseInt(square, 10);
     var color = colorOfClick(pieceName);
-
-    
 
     setupClick();
     //activateDot(33, 34); //we need to call in the the variables moveTo and moveFrom
@@ -87,7 +65,6 @@ function posmoves(pieceName){
         if (square + 10 < 100) //check down
             if (square + 20 < 100 && checkstatus(square+10, color, square) == 1)
                 recursive(square+20, "d", square);
-
     }
 }
 
@@ -121,8 +98,6 @@ function checkstatus(squareNumber, color, movedFromSquare){
 
     else if(color != squareColor) // If the color of the piece being moved is different from the color of the piece on the square
         activateDot(movedFromSquare, squareNumber, "combat");
-//#
-
 }
 
 function activateDot(movedFromSquare, movedToSquare, type){
@@ -356,9 +331,6 @@ function flipSinglePiece(pieceName){
         }
     }
 }
-
-
-
 function deleteAllDots(){
     "use strict";
     var allHTML = document.documentElement.innerHTML;
