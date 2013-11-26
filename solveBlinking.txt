@@ -1,5 +1,0 @@
-HOW TO SOLVE BLINKING
-creative idea - I take a capture of the screen then I put it on top and fade the image
-Better solution - I change delete all dots to instead of rewrite the board to just remove the dots
--It would do this using some regex
--Only rewrite effected pieces
