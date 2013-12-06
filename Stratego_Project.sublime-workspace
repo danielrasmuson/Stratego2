@@ -1,0 +1,1037 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"transition",
+				"transition:   (property)"
+			],
+			[
+				"trani",
+				"transition-duration:   (property)"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"paddi",
+				"padding-right"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"border-left",
+				"border-left-color"
+			],
+			[
+				"border-top",
+				"border-top-color"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"link",
+				"link	link - stylesheet"
+			],
+			[
+				"style",
+				"styleChanges"
+			],
+			[
+				"inside",
+				"insideL"
+			],
+			[
+				"span",
+				"spanStyle"
+			],
+			[
+				"s",
+				"squareList"
+			],
+			[
+				"re",
+				"replaceWith"
+			],
+			[
+				"get",
+				"getWidth  (function)"
+			],
+			[
+				"product",
+				"product_name"
+			],
+			[
+				"clea",
+				"cleanedLine"
+			],
+			[
+				"in",
+				"insideStyle"
+			],
+			[
+				"ins",
+				"insideStyle"
+			],
+			[
+				"sec",
+				"sectionReplace"
+			],
+			[
+				"line",
+				"lineStr"
+			],
+			[
+				"out",
+				"outLineClean"
+			],
+			[
+				"square",
+				"squareID2"
+			],
+			[
+				"piece",
+				"pieceName"
+			],
+			[
+				"piec",
+				"pieceName"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 342.0,
+		"selected_items":
+		[
+			[
+				"close",
+				"Project: Close"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"commit",
+				"Git: Commit history"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"git",
+				"Git: Commit"
+			],
+			[
+				"gitco",
+				"Git: Commit"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"prefi",
+				"Autoprefix CSS"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"case",
+				"Convert Case: Title Case"
+			],
+			[
+				"run",
+				"AutoHotkey - Run"
+			],
+			[
+				"com",
+				"AutoHotkey - Compile"
+			],
+			[
+				"python",
+				"User: Python PEP8 Autoformat"
+			],
+			[
+				"form",
+				"User: Python PEP8 Autoformat"
+			],
+			[
+				"pep",
+				"User: Python PEP8 Autoformat"
+			],
+			[
+				"localh",
+				"Local History: Browse"
+			],
+			[
+				"jshint",
+				"JSHint: Set Keyboard Shortcuts"
+			],
+			[
+				"fllo",
+				"Floobits - Leave Workspace"
+			],
+			[
+				"floo",
+				"Floobits - Leave Workspace"
+			],
+			[
+				"join",
+				"Floobits - Join Recent Workspace"
+			],
+			[
+				"lea",
+				"Floobits - Leave Workspace"
+			],
+			[
+				"floobits",
+				"Floobits - Open Workspace in a Google+ Hangout"
+			],
+			[
+				"floobit",
+				"Floobits - Share Directory (Public)"
+			],
+			[
+				"work",
+				"Worksheet: Evaluate worksheet"
+			],
+			[
+				"ewor",
+				"Worksheet: Evaluate worksheet"
+			],
+			[
+				"ev",
+				"Worksheet: Evaluate worksheet"
+			],
+			[
+				"plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"calc",
+				"Calculate"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"remv",
+				"Package Control: Remove Package"
+			],
+			[
+				"insatll",
+				"Package Control: Install Package"
+			],
+			[
+				"sublimerepl: s",
+				"SublimeREPL: Python - Sublime Text Console"
+			],
+			[
+				"sublimemys",
+				"SublimeREPL: Python - Sublime Text Console"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"AutoHotkey - Run As Piped Buffer"
+			],
+			[
+				"connect",
+				"SQLExec: List connections"
+			],
+			[
+				"list",
+				"SQLExec: List connections"
+			],
+			[
+				"show",
+				"SQLExec: Show Table Records"
+			],
+			[
+				"title",
+				"Convert Case: Title Case"
+			],
+			[
+				"uper",
+				"SublimeREPL: Perl"
+			],
+			[
+				"autofor",
+				"User: Python PEP8 Autoformat"
+			],
+			[
+				"reform",
+				"User: Python PEP8 Autoformat"
+			],
+			[
+				"flak",
+				"User: Python Flake8 Lint"
+			],
+			[
+				"lint",
+				"User: Python Flake8 Lint"
+			],
+			[
+				"note",
+				"Open IPython Notebook"
+			],
+			[
+				"floob",
+				"Floobits - Share Directory (Public)"
+			],
+			[
+				"sublimelint",
+				"Preferences: SublimeLint Settings – User"
+			],
+			[
+				"next",
+				"SublimeLint: Next Error"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"sublimelinter",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"clipbo",
+				"Clipboard Manager: Show History"
+			],
+			[
+				"clipb",
+				"Clipboard Manager: Show History"
+			],
+			[
+				"fomr",
+				"Format: Javascript"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				"summon",
+				"Floobits - Summon Everyone"
+			],
+			[
+				"summ",
+				"Floobits - Summon Everyone"
+			],
+			[
+				"sublimelin",
+				"SublimeREPL: Python - IPython"
+			]
+		],
+		"width": 322.0
+	},
+	"console":
+	{
+		"height": 335.0,
+		"history":
+		[
+			"class OracleExecuteListCommand(sublime_plugin.WindowCommand):",
+			"sublimelinter",
+			"~/.config/sublime-text-2/Packages/SublimeLinter/sublimelinter/modules/libs/jshint/jshint.js"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/randomToDo.txt",
+		"/C/Users/Daniel/Desktop/stratego_TODO.txt",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/Stratego_Project.sublime-project",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/boardList.js",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/boardList.html",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/ALS_Ultimate.sublime-workspace",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/ALS_Ultimate.sublime-project",
+		"/C/Users/Daniel/Desktop/Sandy HTML Project/RevTrak_HTML_Project.sublime-project",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/html/index.html",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/html/donate.html",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/html/involved.html",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/Git.sublime-settings",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/images/.picasaoriginals/.picasa.ini",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/html/footer.html",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/css/style.css",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/js/footer.js",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/css/enter.css",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/html/enter.html",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/js/header.js",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/html/header.html",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Asset/frozenage/index.html",
+		"/C/Users/Daniel/Desktop/TimeSheet/timeSheet.py",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/deploy/css/enter.css",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/deploy/html/enter.html",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/css/donate.css",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/djangoTesting.py",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/deploy/css/aboutALS.css",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/html/aboutALS.html",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/deploy/css/donate.css",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/html/details.html",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/.gitignore",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/deploy/html/details.html",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/deploy/js/header.js",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/deploy/html/footer.html",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/deploy/js/footer.js",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/html/header.inc",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/images/.picasa.ini",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/images/banner.jpg",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/css/index.css",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Asset/frozenage/license.txt",
+		"/C/Python33/Scripts/django-admin.py",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/deploy/html/index.html",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/deploy/css/index.css",
+		"/C/Users/Daniel/Desktop/ALSUltimateWebsite/django/setup.py",
+		"/C/Users/Daniel/Desktop/zooQuestions4/zooQuestions4.txt",
+		"/C/Users/Daniel/Desktop/zooQuestions4/RasmusonDResults.txt",
+		"/C/Users/Daniel/Desktop/zooQuestions4/RasmusonDSQL.txt",
+		"/C/Users/Daniel/Desktop/zooQuestions4/Zoo+Questions+4.doc",
+		"/C/Users/Daniel/Desktop/Sandy HTML Project/cleanTextPython/changes11-26.txt",
+		"/C/Users/Daniel/Desktop/Sandy HTML Project/cleanTextPython/run.py",
+		"/C/Users/Daniel/Desktop/Sandy HTML Project/cleanTextPython/out.csv",
+		"/C/Users/Daniel/Desktop/Sandy HTML Project/cleanTextPython/old/outOld15.csv",
+		"/C/Users/Daniel/Desktop/RevTrak Sandy's Changes.txt",
+		"/C/Users/Daniel/Desktop/IT Attendance/myClassNames.txt",
+		"/C/Users/Daniel/Desktop/hrStudyingAHK.ahk",
+		"/C/Users/Daniel/Desktop/HRStudySheet/CheatSheet.txt",
+		"/C/Users/Daniel/Documents/GitHub/Course_Smart_Flashcards/courseSmart.ahk",
+		"/C/Users/Daniel/Desktop/alexsShapeAssignment/testarrows.py",
+		"/C/Users/Daniel/Desktop/alexsShapeAssignment/shapes.py",
+		"/C/Users/Daniel/Desktop/alexsShapeAssignment/shapes2.py",
+		"/C/Users/Daniel/Desktop/stratego.txt",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Daniel/Desktop/roshansAssignment/PA5aStart.py",
+		"/C/Users/Daniel/Desktop/roshansAssignment/dateSubtract.py",
+		"/C/Users/Daniel/Desktop/RasmusonDProc.txt",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/setup.css",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/dots.js",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/setup.js",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/setup.html",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/master.css",
+		"/C/Users/Daniel/Desktop/RasmusonDTrigger.txt",
+		"/C/Users/Daniel/Desktop/LeagueDontWasteYourLife.txt",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/boardList.css",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/solveBlinking.txt",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/boardList.html",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/boardlist.html",
+		"/C/Users/Daniel/Desktop/Zoo3_Due_Tuesday/wellsHelp.txt",
+		"/C/Users/Daniel/Desktop/Zoo3_Due_Tuesday/RasmusonDZoo3SQL.txt",
+		"/C/Users/Daniel/Desktop/Zoo3_Due_Tuesday/RasmusonDZoo3Results.txt",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/ma0dvrql.che.txt",
+		"/C/Users/Daniel/Desktop/Sandy HTML Project/cleanTextPython/old/sandyChangges21nov.txt",
+		"/C/Users/Daniel/Desktop/sandyChangges21nov.txt",
+		"/C/Users/Daniel/Downloads/Intro to Comp & Applic 100 01-07_GradesExport_2013-11-24-17-37.csv",
+		"/C/Users/Daniel/Desktop/Zoo3_Due_Tuesday/questions.txt",
+		"/C/Users/Daniel/floobits/share/danielrasmuson/share_me/html/boardlist.html",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/JSHint Gutter/Default (Windows).sublime-keymap",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/.gitignore",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/boardListJS.js",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/boardListcss.css",
+		"/C/Users/Daniel/floobits/share/Natey/share_me1/hello",
+		"/C/Users/Daniel/floobits/share/Natey/share_me1/.floo",
+		"/C/Users/Daniel/floobits/share/danielrasmuson/share_me/newFile.js",
+		"/C/Users/Daniel/floobits/share/danielrasmuson/share_me/html/setup.html",
+		"/C/Users/Daniel/floobits/msgs.floobits.log",
+		"/C/Users/Daniel/Desktop/delete.js",
+		"/C/Users/Daniel/Desktop/boardlist.html",
+		"/C/Users/Daniel/Desktop/javascriptDebugging.js",
+		"/C/Users/Daniel/Desktop/Zoo3_Due_Tuesday/Zoo+Questions+3.doc",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/C/Users/Daniel/Desktop/Zoo3_Due_Tuesday/new.html",
+		"/C/Users/Daniel/Desktop/deleteit.py",
+		"/C/Users/Daniel/Desktop/sqlReview.sql",
+		"/C/Users/Daniel/Desktop/candelete.py",
+		"/C/Users/Daniel/Desktop/Sandy HTML Project/cleanTextPython/old/outOld14.csv",
+		"/C/Users/Daniel/Desktop/getometicShape/shapes.py",
+		"/C/Users/Daniel/Desktop/getometicShape/testshapes.py",
+		"/C/Users/Daniel/Desktop/delete.py",
+		"/C/Users/Daniel/AppData/Local/Temp/Temp1_Premier Products Master Script.zip/Premier Products Master Script.txt",
+		"/C/Users/Daniel/Desktop/MGMT Paper/stregnthsFinderTraits.txt",
+		"/C/Users/Daniel/Desktop/MGMT Paper/mgmtPaperNotes.txt",
+		"/C/Users/Daniel/Desktop/Stratego/html/boardlist.html",
+		"/C/Users/Daniel/Desktop/canddelete/country.py",
+		"/C/Users/Daniel/Desktop/canddelete/countryTest.py",
+		"/C/Users/Daniel/Desktop/davidAllen.py",
+		"/C/Users/Daniel/Desktop/Premier Products Master Script.txt",
+		"/C/Users/Daniel/Desktop/RasmusonDView.txt",
+		"/C/Users/Daniel/Desktop/zoo2Results.txt",
+		"/C/Users/Daniel/Desktop/zoo2answers.txt",
+		"/C/Users/Daniel/Desktop/zoo2SQL.txt",
+		"/C/Users/Daniel/Desktop/zoo2Questions.txt",
+		"/C/Users/Daniel/Desktop/figuringOutCourses.txt",
+		"/C/Users/Daniel/Desktop/checker.py",
+		"/C/Users/Daniel/Desktop/zooQuestions2.txt",
+		"/C/Users/Daniel/Desktop/testsql.sql",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/sql2.sublime-build",
+		"/C/Users/Daniel/AppData/Local/Temp/Temp1_FULL_DATABASE_with_DROP.zip/FULL_DATABASE_with_DROP.sql"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"2s",
+			"\"",
+			"\\n",
+			"%;",
+			"2s",
+			"onclick",
+			"font-color",
+			"height",
+			"padding",
+			"\"",
+			"\\n",
+			"\"",
+			"\\n",
+			"\"",
+			"\\n",
+			"\"",
+			"\\n",
+			"<br>",
+			"TODO",
+			"(!?@)TODO",
+			"todo",
+			"\"",
+			"\\n",
+			"\"",
+			"\\n",
+			"header",
+			"\"",
+			"\\n",
+			"\"",
+			"\\n",
+			"100",
+			"h1",
+			"images",
+			"src=\"images",
+			"secRepl",
+			"font-size",
+			"yle=\"font-size",
+			"$",
+			"owNumber =",
+			"font-size: (\\d)(\\d)(?!px)",
+			"font-size:(\\d)",
+			"font-size:\\d",
+			"font-size:(?! )(\\d)(\\d)(?!px)",
+			"font-size:(?! )\\d\\d(?!px)",
+			"(!?font-size:(?! )\\d\\d(?!px))",
+			"font-size:(?! )\\d\\d(?!px)",
+			"font-size: \\d\\d(?!px)",
+			"font-size: \\d\\d(?px)",
+			"\\d(?",
+			"\\d",
+			"25",
+			"^.+?Stage",
+			"-",
+			"\\n",
+			"^.",
+			".",
+			"#",
+			"^.",
+			"^[1-5].",
+			"drawLine",
+			" dy",
+			"dy",
+			"canvas",
+			"print",
+			"datetime",
+			"birthday",
+			"20081220",
+			"setBirthDate",
+			"getBirthDate",
+			"birthDate",
+			"deleteAlldots",
+			": ",
+			"moveCircle",
+			"delete",
+			"//(?! )",
+			"styleChanges",
+			"[0-9]",
+			"inS",
+			"ins",
+			"inS",
+			"spanStyleChanges",
+			"style",
+			"styleSectionFixes",
+			"font-size: [0-9](?![0-9])",
+			"inS",
+			"font-size: [0-9](?![0-9])",
+			"font-size: 1(?![0-9])",
+			"font-size: 1[?!0-9]",
+			"font-size",
+			"font",
+			"margin",
+			"insideList",
+			"\"\"",
+			"&nbsp;",
+			"<.+?>",
+			"will be depreciated straight",
+			"uipment will be depreciated straight line to zero",
+			"$350,000",
+			"costs $350,000",
+			",",
+			"Select  First NameSorted Ascending, Last Name   Lab AttendanceView Actions for Lab Attendance\nSelect  Lab 11 Attendance (Nov. 18)View Actions for Lab 11 Attendance (Nov. 18)",
+			"- Click to FlagView progress for ",
+			"Question",
+			"question",
+			"/",
+			"”",
+			"squareList",
+			"'",
+			"\"",
+			"'",
+			"\"",
+			"'",
+			"\"",
+			"'\"'",
+			"'",
+			"\"",
+			"newHTML",
+			"var checker",
+			"checker0",
+			"deleteAllDots",
+			"setup",
+			"inner",
+			"ink rel=\"stylesheet\" ty",
+			"delete",
+			"swit",
+			"TODO",
+			"^$",
+			"//"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"font-size: $1$2px\"",
+			"font-size: $1",
+			"font-size: $1$2px",
+			"font-size:(?! )$1-$2-$3-$4dpx",
+			"font-size:(?! )$2$3dpx",
+			"$1\n$2\n$3\n$4",
+			"font-size:(?! )$2$3dpx",
+			"font-size:(?! )$1$2dpx",
+			"px",
+			"font-size:(?! ){$1}{$2}(?!px)",
+			"\"",
+			"@TODO",
+			",",
+			"",
+			"    "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.clipboard_manager":
+	{
+		"height": 166.0
+	},
+	"output.csslint_result_view":
+	{
+		"height": 126.0
+	},
+	"output.exec":
+	{
+		"height": 416.0
+	},
+	"output.git":
+	{
+		"height": 126.0
+	},
+	"project": "Stratego_Project.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"board",
+				"js\\boardList.js"
+			],
+			[
+				"vol",
+				"Deploy\\html\\involved.html"
+			],
+			[
+				"donate",
+				"Deploy\\html\\donate.html"
+			],
+			[
+				"ind",
+				"Deploy\\html\\index.html"
+			],
+			[
+				"foo",
+				"Deploy\\js\\footer.js"
+			],
+			[
+				"fot",
+				"Deploy\\html\\footer.html"
+			],
+			[
+				"footer",
+				"Deploy\\js\\footer.js"
+			],
+			[
+				"inde",
+				"Deploy\\html\\index.html"
+			],
+			[
+				"s",
+				"Deploy\\css\\style.css"
+			],
+			[
+				"e",
+				"Deploy\\html\\enter.html"
+			],
+			[
+				"enter",
+				"Deploy\\css\\enter.css"
+			],
+			[
+				"header",
+				"Deploy\\js\\header.js"
+			],
+			[
+				"sy",
+				"Deploy\\css\\style.css"
+			],
+			[
+				"he",
+				"Deploy\\html\\header.html"
+			],
+			[
+				"sty",
+				"Deploy\\css\\style.css"
+			],
+			[
+				"in",
+				"Deploy\\html\\index.html"
+			],
+			[
+				"invo",
+				"Deploy\\html\\involved.html"
+			],
+			[
+				"als",
+				"Deploy\\html\\aboutALS.html"
+			],
+			[
+				"don",
+				"Deploy\\html\\donate.html"
+			],
+			[
+				"style",
+				"Deploy\\css\\style.css"
+			],
+			[
+				"deta",
+				"Deploy\\html\\details.html"
+			],
+			[
+				"heade",
+				"Deploy\\html\\header.html"
+			],
+			[
+				"about",
+				"Deploy\\html\\aboutALS.html"
+			],
+			[
+				"us",
+				"Deploy\\html\\us.html"
+			],
+			[
+				"styl",
+				"css\\style.css"
+			],
+			[
+				"out",
+				"cleanTextPython\\out.csv"
+			],
+			[
+				"run",
+				"Sandy HTML Project\\cleanTextPython\\run.py"
+			],
+			[
+				"chan",
+				"Sandy HTML Project\\cleanTextPython\\changes11-26.txt"
+			],
+			[
+				"shap",
+				"shapes2.py"
+			],
+			[
+				"test",
+				"testarrows.py"
+			],
+			[
+				"shapes",
+				"shapes.py"
+			],
+			[
+				"sha",
+				"shapes.py"
+			],
+			[
+				"pa",
+				"PA5aStart.py"
+			],
+			[
+				"boa",
+				"html\\boardList.html"
+			],
+			[
+				"boar",
+				"js\\boardList.js"
+			],
+			[
+				"set",
+				"html\\setup.html"
+			],
+			[
+				"setup",
+				"js\\setup.js"
+			],
+			[
+				"bo",
+				"css\\boardList.css"
+			],
+			[
+				"sql",
+				"RasmusonDZoo3SQL.txt"
+			],
+			[
+				"resu",
+				"RasmusonDZoo3Results.txt"
+			],
+			[
+				"b",
+				"html\\boardlist.html"
+			],
+			[
+				"ssql",
+				"RasmusonDZoo3SQL.txt"
+			],
+			[
+				"ques",
+				"questions.txt"
+			],
+			[
+				"zoo",
+				"Zoo+Questions+3.doc"
+			],
+			[
+				"",
+				"C:\\Users\\Daniel\\AppData\\Roaming\\Sublime Text 3\\Packages\\User\\SQLExec.sublime-settings"
+			],
+			[
+				"tra",
+				"stregnthsFinderTraits.txt"
+			],
+			[
+				"changes",
+				"cleanTextPython\\changes_nov15.txt"
+			],
+			[
+				"setu",
+				"html\\setup.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"als",
+				"C:\\Users\\Daniel\\Documents\\GitHub\\ALS_Ultimate\\ALS_Ultimate.sublime-project"
+			],
+			[
+				"sand",
+				"C:\\Users\\Daniel\\Desktop\\Sandy HTML Project\\RevTrak_HTML_Clean.sublime-project"
+			],
+			[
+				"",
+				"C:\\Users\\Daniel\\Documents\\GitHub\\ALS_Ultimate\\ALS_Ultimate.sublime-workspace"
+			],
+			[
+				"revtra",
+				"C:\\Users\\Daniel\\Desktop\\Sandy HTML Project\\RevTrak_HTML_Project.sublime-project"
+			],
+			[
+				"rev",
+				"C:\\Users\\Daniel\\Desktop\\Sandy HTML Project\\RevTrak_HTML_Project.sublime-project"
+			],
+			[
+				"revtrak",
+				"C:\\Users\\Daniel\\Desktop\\Sandy HTML Project\\RevTrak_HTML_Project.sublime-project"
+			],
+			[
+				"alas",
+				"C:\\Users\\Daniel\\Documents\\GitHub\\ALS_Ultimate\\ALS_Ultimate.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 210.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

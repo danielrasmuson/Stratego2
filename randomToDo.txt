@@ -1,0 +1,3 @@
+@TODO - what if you cant move
+@TODO - also probably make a sheet of todos
+@TODO - piece 28 problem

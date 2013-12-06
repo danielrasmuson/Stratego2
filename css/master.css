@@ -7,11 +7,16 @@ body{
 #board{
     width: 1000px;
     height: 1000px;
+    /*height: 100%; screen size friendly needs work*/
     z-index: -1;
     position: absolute;
 }
 #playingField{
     width: 1028px;
+    /*max-height: calc(100% - 60px); width needs to be 2.8% great then board width*/
+    /*height: 100%;*/
+    margin-left: auto;
+    margin-right: auto;
 }
 #playingField ul{
     padding-left: 28px;
@@ -61,3 +66,4 @@ ul li div{
     margin-top: 0px;
     opacity: .5;
 }
+
