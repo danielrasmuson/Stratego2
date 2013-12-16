@@ -1,10 +1,6 @@
 function setupClick(){
     "use strict";
     var squareList=document.getElementById("squareList");
-    // These are for once we have setup completely set up 
-    // alert("Blue goes first, don't look red!");
-    // flipPieces("blue");
-
     squareList.onclick=function(e){
         deleteAllDots();
         if(colorOfClick(e.target.id) == localStorage.getItem("turn")){
@@ -22,8 +18,7 @@ window.onload=function(){
     // squareList.innerHTML = setupResults;
 
     // flipSinglePiece("red5-67");
-    "use strict";
-    localStorage.setItem("turn", "blue");
+    "use strict"; localStorage.setItem("turn", "blue");
     setupClick();
 };
 
@@ -207,8 +202,13 @@ function dotClicked(movedFromSquare, movedToSquare){
         
         alert("switch people");
         sleep(10);
+<<<<<<< HEAD
         //renable this latter
         
+=======
+        // renable this latter
+        // alert("switch people");
+>>>>>>> 3e3d5da9c2f83b442d92f1305d89774c24a7ca3e
         if (result == 1)
         {
             flipSinglePiece(squareID1);

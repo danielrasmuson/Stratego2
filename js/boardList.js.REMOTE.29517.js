@@ -1,10 +1,6 @@
 function setupClick(){
     "use strict";
     var squareList=document.getElementById("squareList");
-    // These are for once we have setup completely set up 
-    // alert("Blue goes first, don't look red!");
-    // flipPieces("blue");
-
     squareList.onclick=function(e){
         deleteAllDots();
         if(colorOfClick(e.target.id) == localStorage.getItem("turn")){
@@ -22,8 +18,7 @@ window.onload=function(){
     // squareList.innerHTML = setupResults;
 
     // flipSinglePiece("red5-67");
-    "use strict";
-    localStorage.setItem("turn", "blue");
+    "use strict"; localStorage.setItem("turn", "blue");
     setupClick();
 };
 
@@ -147,7 +142,7 @@ function dotClicked(movedFromSquare, movedToSquare){
     {
         // alert(squareID2); // doesnt like alerts
         flipSinglePiece(squareID2);
-        alert("RAAAAAHHHAHAHAHAHHHHHAAHHHHH");
+        // alert("RAAAAAHHHAHAHAHAHHHHHAAHHHHH");
     }
     // 3 is for when you attack a blank square
     if (result == 1 || result == 3){
@@ -183,10 +178,9 @@ function dotClicked(movedFromSquare, movedToSquare){
         }
         flipPieces("blue");
         
-        alert("switch people");
         sleep(10);
         // renable this latter
-        
+        // alert("switch people");
         if (result == 1)
         {
             flipSinglePiece(squareID1);
@@ -201,14 +195,13 @@ function dotClicked(movedFromSquare, movedToSquare){
     else if(colorOfClick(squareID1) == "red"){
         if (result == 1)
         {
-            flipSinglePiece(squareID1);  //This squareid is no longer correct since the piece has moved to a new square, so we need to get the new square name from somewhere
+            flipSinglePiece(squareID1);
         }
         flipPieces("red");
         
-        alert("switch people");
         sleep(10);
-        //renable this latter
-        
+        // renable this latter
+        // alert("switch people");
         if (result == 1)
         {
             flipSinglePiece(squareID1);
