@@ -248,9 +248,6 @@ function colorOfClick(idname){
 //     // add in when youre ready for side dot
 //     document.documentElement.innerHTML = cleanedHTML;
 // }
-//I'm using some JQuery to important deleteAllDots
-$.getScript("dots.js", function(){});   
-
 function sortList(ul){
     var new_ul = ul.cloneNode(false);
 
@@ -270,6 +267,8 @@ function sortList(ul){
     }
 
     // Sort the lis in descending order
+    // @TODO combine these two pieces of code using bluelis and redlis as variable
+    //              would be a lot cleaner
     bluelis.sort(function(a, b){
         var aID = a.innerHTML.split(">")[0].split('"').reverse()[1].split("-")[0].replace("blue","").replace("red", "");
         var bID = b.innerHTML.split(">")[0].split('"').reverse()[1].split("-")[0].replace("blue","").replace("red", "");
@@ -312,3 +311,21 @@ function sortList(ul){
 
     ul.parentNode.replaceChild(new_ul, ul);
 }
+
+// @TODO not unexpectedly deleteAllDots is not working for sideboard
+function deleteAllDots(){
+    "use strict";
+    var lines = document.getElementById("squareList").getElementsByTagName("li");
+    for (var i = 0; i < 100; i++){
+        var line = lines[i].innerHTML;
+        if (line.indexOf("moveCircle") != -1){ // section to change
+            lines[i].innerHTML = line.replace(new RegExp("(<div class=\"moveCircle\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircle\" id=\"listenForClick.\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick.\"></div>)","g"),"");
+            }
+    }
+}
+
+$.getScript("test.js", function(){
+
+   alert("Script loaded and executed.");
+   // Here you can use anything you defined in the loaded script
+});

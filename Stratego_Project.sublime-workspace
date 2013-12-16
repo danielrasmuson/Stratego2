@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"dots",
+				"deleteAllDots"
+			],
+			[
 				"transition",
 				"transition:   (property)"
 			],
@@ -115,45 +119,11 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "html/boardList.html",
-			"settings":
-			{
-				"buffer_size": 8006,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Searching 11 files for \"todo\" (regex)\n\nC:\\Users\\Daniel\\Documents\\GitHub\\stratego_11-23\\Stratego2\\.gitignore:\n  130  \n  131  # NuGet Packages Directory\n  132: ## TODO: If you have NuGet Package Restore enabled, uncomment the next line\n  133  #packages/\n  134  \n\nC:\\Users\\Daniel\\Documents\\GitHub\\stratego_11-23\\Stratego2\\randomToDo.txt:\n    1: @TODO - what if you cant move\n    2: @TODO - also probably make a sheet of todos\n    3: @TODO - piece 28 problem\n\nC:\\Users\\Daniel\\Documents\\GitHub\\stratego_11-23\\Stratego2\\html\\boardList.html:\n   11  not sure how to fix it but thts the problem\n   12  \n   13: @TODO create win function if 2\n   14: @TODO the game wont end\n   15: @TODO add combat and move pictures\n   16: @TODO Secondary list of all pieces -Off to the side of the board\n   17  	•Add onclick handler to this list, then activate dot on all available squares\n   18  	•When dot is clicked, move piece from the side, to the board\n\nC:\\Users\\Daniel\\Documents\\GitHub\\stratego_11-23\\Stratego2\\html\\setup.html:\n    1: <!-- @TODO: Import in functions and remove from file\n    2  	Color of click function\n    3  	Check status function\n    4: 	NEXT TIME @TODO: \n    5  	Hook up submit button\n    6  	configure swaping correctly\n\n11 matches across 4 files\n\n\nSearching 11 files for \"todo\" (regex)\n\nC:\\Users\\Daniel\\Documents\\GitHub\\stratego_11-23\\Stratego2\\randomToDo.txt:\n    1: @TODO - what if you cant move\n    2: @TODO - also probably make a sheet of todos\n    3: @TODO - piece 28 problem\n\nC:\\Users\\Daniel\\Documents\\GitHub\\stratego_11-23\\Stratego2\\html\\boardList.html:\n   11  not sure how to fix it but thts the problem\n   12  \n   13: @TODO create win function if 2\n   14: @TODO the game wont end\n   15: @TODO add combat and move pictures\n   16: @TODO Secondary list of all pieces -Off to the side of the board\n   17  	•Add onclick handler to this list, then activate dot on all available squares\n   18  	•When dot is clicked, move piece from the side, to the board\n\nC:\\Users\\Daniel\\Documents\\GitHub\\stratego_11-23\\Stratego2\\html\\setup.html:\n    1: <!-- @TODO: Import in functions and remove from file\n    2  	Color of click function\n    3  	Check status function\n    4: 	NEXT TIME @TODO: \n    5  	Hook up submit button\n    6  	configure swaping correctly\n\n10 matches across 3 files\n\n\nSearching 11 files for \"todo\" (regex)\n\nC:\\Users\\Daniel\\Documents\\GitHub\\stratego_11-23\\Stratego2\\randomToDo.txt:\n    1: @TODO - what if you cant move\n    2: @TODO - also probably make a sheet of todos\n    3: @TODO - piece 28 problem\n\nC:\\Users\\Daniel\\Documents\\GitHub\\stratego_11-23\\Stratego2\\html\\boardList.html:\n   11  not sure how to fix it but thts the problem\n   12  \n   13: @TODO create win function if 2\n   14: @TODO the game wont end\n   15: @TODO add combat and move pictures\n   16: @TODO Secondary list of all pieces -Off to the side of the board\n   17  	•Add onclick handler to this list, then activate dot on all available squares\n   18  	•When dot is clicked, move piece from the side, to the board\n\n8 matches across 2 files\n",
-			"settings":
-			{
-				"buffer_size": 3016,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "html/setup.html",
-			"settings":
-			{
-				"buffer_size": 9822,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/boardList.js",
-			"settings":
-			{
-				"buffer_size": 12018,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 375.0,
+		"height": 335.0,
 		"selected_items":
 		[
 			[
@@ -448,12 +418,18 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/master.css",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/boardList.html",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/boardList.js",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/setup.html",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/test.js",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/setup.js",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/dots.js",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/setup.css",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/.gitignore",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/randomToDo.txt",
 		"/C/Users/Daniel/Desktop/stratego_TODO.txt",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/Stratego_Project.sublime-project",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/boardList.js",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/boardList.html",
 		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/ALS_Ultimate.sublime-workspace",
 		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/ALS_Ultimate.sublime-project",
 		"/C/Users/Daniel/Desktop/Sandy HTML Project/RevTrak_HTML_Project.sublime-project",
@@ -516,11 +492,6 @@
 		"/C/Users/Daniel/Desktop/roshansAssignment/PA5aStart.py",
 		"/C/Users/Daniel/Desktop/roshansAssignment/dateSubtract.py",
 		"/C/Users/Daniel/Desktop/RasmusonDProc.txt",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/setup.css",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/dots.js",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/setup.js",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/setup.html",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/master.css",
 		"/C/Users/Daniel/Desktop/RasmusonDTrigger.txt",
 		"/C/Users/Daniel/Desktop/LeagueDontWasteYourLife.txt",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/boardList.css",
@@ -574,8 +545,7 @@
 		"/C/Users/Daniel/Desktop/checker.py",
 		"/C/Users/Daniel/Desktop/zooQuestions2.txt",
 		"/C/Users/Daniel/Desktop/testsql.sql",
-		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/sql2.sublime-build",
-		"/C/Users/Daniel/AppData/Local/Temp/Temp1_FULL_DATABASE_with_DROP.zip/FULL_DATABASE_with_DROP.sql"
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/sql2.sublime-build"
 	],
 	"find":
 	{
@@ -594,6 +564,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"delete",
+			"deletedots",
+			"delete",
 			"todo",
 			"2s",
 			"\"",
@@ -718,10 +691,7 @@
 			"setup",
 			"inner",
 			"ink rel=\"stylesheet\" ty",
-			"delete",
-			"swit",
-			"TODO",
-			"^$"
+			"delete"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -754,461 +724,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "html/boardList.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8006,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3016,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										161,
-										165
-									],
-									[
-										343,
-										347
-									],
-									[
-										380,
-										384
-									],
-									[
-										417,
-										421
-									],
-									[
-										431,
-										435
-									],
-									[
-										602,
-										606
-									],
-									[
-										640,
-										644
-									],
-									[
-										671,
-										675
-									],
-									[
-										713,
-										717
-									],
-									[
-										1021,
-										1025
-									],
-									[
-										1149,
-										1153
-									],
-									[
-										1372,
-										1376
-									],
-									[
-										1409,
-										1413
-									],
-									[
-										1446,
-										1450
-									],
-									[
-										1460,
-										1464
-									],
-									[
-										1631,
-										1635
-									],
-									[
-										1669,
-										1673
-									],
-									[
-										1700,
-										1704
-									],
-									[
-										1742,
-										1746
-									],
-									[
-										2050,
-										2054
-									],
-									[
-										2178,
-										2182
-									],
-									[
-										2401,
-										2405
-									],
-									[
-										2438,
-										2442
-									],
-									[
-										2475,
-										2479
-									],
-									[
-										2489,
-										2493
-									],
-									[
-										2660,
-										2664
-									],
-									[
-										2698,
-										2702
-									],
-									[
-										2729,
-										2733
-									],
-									[
-										2771,
-										2775
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								2280,
-								2280
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 3,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"sublime_auto_complete": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1178.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "html/setup.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9822,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "js/boardList.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12018,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1273,6 +790,18 @@
 			[
 				"boa",
 				"js\\boardList.js"
+			],
+			[
+				"mas",
+				"css\\master.css"
+			],
+			[
+				"bor",
+				"html\\boardList.html"
+			],
+			[
+				"set",
+				"html\\setup.html"
 			],
 			[
 				"board",
@@ -1409,10 +938,6 @@
 			[
 				"boar",
 				"js\\boardList.js"
-			],
-			[
-				"set",
-				"html\\setup.html"
 			],
 			[
 				"setup",
