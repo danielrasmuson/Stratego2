@@ -202,8 +202,13 @@ function dotClicked(movedFromSquare, movedToSquare){
         
         alert("switch people");
         sleep(10);
+<<<<<<< HEAD
         //renable this latter
         
+=======
+        // renable this latter
+        // alert("switch people");
+>>>>>>> 3e3d5da9c2f83b442d92f1305d89774c24a7ca3e
         if (result == 1)
         {
             flipSinglePiece(squareID1);

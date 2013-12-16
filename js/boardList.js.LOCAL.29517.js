@@ -14,8 +14,8 @@ function setupClick(){
 
 window.onload=function(){
     // // ENABLE START GAME BUTTON RETRIEVE FROM SETUP.HTML
-    // var setupResults = localStorage.getItem('testObject')
-    // squareList.innerHTML = setupResults;
+    //var setupResults = localStorage.getItem('testObject')
+    //squareList.innerHTML = setupResults;
 
     // flipSinglePiece("red5-67");
     "use strict"; localStorage.setItem("turn", "blue");
@@ -24,18 +24,18 @@ window.onload=function(){
 
 function posmoves(pieceName){
     "use strict";
-    var name = pieceName.split("-")[0].replace("blue", "").replace("red", ""); // the name of the piece (Spy, Bomb, 9 etc..)
-    var square = pieceName.split("-")[1]; // the position on the board
+    var name = pieceName.split("-")[0].replace("blue", "").replace("red", ""); //the name of the piece (Spy, Bomb, 9 etc..)
+    var square = pieceName.split("-")[1]; //the position on the board
     square = parseInt(square, 10);
     var color = colorOfClick(pieceName);
 
     setupClick();
-    // activateDot(33, 34); // we need to call in the the variables moveTo and moveFrom
+    //activateDot(33, 34); //we need to call in the the variables moveTo and moveFrom
 
     if (name == "Bomb" || name == "Flag" || name == "lakeSquare" || name == "blankSquare")
         return; // if it's a piece that can't move
 
-    if (name != "9") // movement for everything except 9
+    if (name != "9") //movement for everything except 9
     {
         if (square % 10 != 9) // Move to the right
             checkstatus(square+1, color, square);
@@ -43,26 +43,26 @@ function posmoves(pieceName){
             checkstatus(square-1, color, square);
         if (square - 10 >= 0) // Move up
             checkstatus(square-10, color, square);
-        if (square + 10 < 100) // Move down
+        if (square + 10 < 100) //Move down
             checkstatus(square+10, color, square);
     }
 
     if (name == "9") // movement for 9
     {
 
-        if (square % 10 != 9) // check to the right
+        if (square % 10 != 9) //check to the right
             if (square+1 % 10 != 9 && checkstatus(square+1, color, square) == 1)
                 recursive(square+2, "r", square);
 
-        if (square % 10 !== 0) // check to the left
+        if (square % 10 !== 0) //check to the left
             if (square-1 % 10 !== 0 && checkstatus(square-1, color, square) == 1)
                 recursive(square-2, "l", square);
             
-        if (square - 10 > 0) // check up
+        if (square - 10 > 0) //check up
             if (square - 20 > 0 && checkstatus(square-10, color, square) == 1)
                 recursive(square-20, "u", square);
 
-        if (square + 10 < 100) // check down
+        if (square + 10 < 100) //check down
             if (square + 20 < 100 && checkstatus(square+10, color, square) == 1)
                 recursive(square+20, "d", square);
     }
@@ -137,16 +137,16 @@ function dotClicked(movedFromSquare, movedToSquare){
     var pieceB = squareID2.split("-")[0].replace("blue", "").replace("red", ""); // gets the name from the id
 
     var result = combat(pieceA, pieceB);
-    // -1 do nothing 
+    //-1 do nothing 
     if(result != 3)
     {
         // alert(squareID2); // doesnt like alerts
         flipSinglePiece(squareID2);
         alert("RAAAAAHHHAHAHAHAHHHHHAAHHHHH");
     }
-    // 3 is for when you attack a blank square
+    //3 is for when you attack a blank square
     if (result == 1 || result == 3){
-        // 1. Replace the and then paste it into the spot in the list it needs to go
+        //1. Replace the and then paste it into the spot in the list it needs to go
         var colorAndStuff = movedFromHTML.split("=")[2].replace("\"","").split("-")[0]+"-";
         var innerHTMLList = movedFromHTML.split("\"");
         var newHTMLInner = (innerHTMLList[0]+"\""+innerHTMLList[1]+"\""+innerHTMLList[2]+"\""+colorAndStuff+movedToSquare+"\">");
@@ -156,7 +156,7 @@ function dotClicked(movedFromSquare, movedToSquare){
     else if (result === 0)
         lItems[movedToSquare].innerHTML = "<div id=\"blankSquare-"+movedToSquare+"\">";
 
-    else if (result == 2){ // End the game (Call an endgame(playerX) function)
+    else if (result == 2){ //End the game (Call an endgame(playerX) function)
         // alert("Game!"); doesnt like alerts
         // lItems[movedFromSquare].innerHTML = '<div id="blankSquare-'+movedFromSquare+'">'; 
         // deleteAllDots();
@@ -251,15 +251,15 @@ function recursive(movedToSquare, direction, movedFromSquare){
 }
 
 
-function combat(a, b){ // a is the attacking piece, if a wins the function returns 1, if b wins it returns -1, otherwise returns 0 if they tie both die, or 2 if its a flag
+function combat(a, b){ //a is the attacking piece, if a wins the function returns 1, if b wins it returns -1, otherwise returns 0 if they tie both die, or 2 if its a flag
     "use strict";
-    if (a == b) // If they tie
+    if (a == b) //If they tie
         return 0;
 
     if (b == "blankSquare")
         return 3;
 
-    if (a == "Spy") // If the spy attacks
+    if (a == "Spy") //If the spy attacks
         if(b == "1") // and it hits the 1
             return 1; // the spy wins
         else
@@ -284,7 +284,7 @@ function combat(a, b){ // a is the attacking piece, if a wins the function retur
 }
 
 
-// a function to switch the backs of the pieces
+//a function to switch the backs of the pieces
 function flipPieces(color){
     "use strict";
     var lines = document.getElementById("squareList").getElementsByTagName("li");
@@ -294,7 +294,7 @@ function flipPieces(color){
         var line = lines[i].innerHTML;
         if (line.indexOf(color) != -1){
             if (line.indexOf(color+"Back") != -1){
-                // change to pieceIMG
+                //change to pieceIMG
                 var lineID = line.split("-")[0].split("id=\"")[1];
                 lines[i].innerHTML = line.replace(new RegExp("/(.*)png","g"),"/images/pieces/"+lineID+".png");
             }
@@ -306,7 +306,7 @@ function flipPieces(color){
     }
 }
 
-// a function to switch the backs of the pieces
+//a function to switch the backs of the pieces
 function flipSinglePiece(pieceName){
     "use strict";
     var lines = document.getElementById("squareList").getElementsByTagName("li");
@@ -322,7 +322,7 @@ function flipSinglePiece(pieceName){
             else{color = "blue";}
 
             if (line.indexOf(color+"Back") != -1){
-                // change to pieceIMG
+                //change to pieceIMG
                 var lineID = line.split("-")[0].split("id=\"")[1];
                 lines[i].innerHTML = line.replace(new RegExp("/(.*)png","g"),"/images/pieces/"+lineID+".png");
             }
@@ -335,11 +335,7 @@ function flipSinglePiece(pieceName){
 }
 function deleteAllDots(){
     "use strict";
-    var lines = document.getElementById("squareList").getElementsByTagName("li");
-    for (var i = 0; i < 100; i++){
-        var line = lines[i].innerHTML;
-        if (line.indexOf("moveCircle") != -1){ // section to change
-            lines[i].innerHTML = line.replace(new RegExp("(<div class=\"moveCircle\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircle\" id=\"listenForClick.\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick.\"></div>)","g"),"");
-            }
-    }
+    var allHTML = document.documentElement.innerHTML;
+    var cleanedHTML = allHTML.replace(new RegExp("(<div class=\"moveCircle\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircle\" id=\"listenForClick.\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick.\"></div>)","g"),"");
+    document.documentElement.innerHTML = cleanedHTML; // part of problem for blinking
 }
