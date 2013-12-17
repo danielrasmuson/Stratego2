@@ -189,6 +189,7 @@ function dotClicked(movedFromSquare, movedToSquare){
     var openSideSquareA;
     var openSideSquareB;
     // 3 is for when you attack a blank square
+    var newSquareID1;
     if (result == 1){
         // The squareID2 needs to be moved to the sideboard
         openSideSquareB = checkSideboard(pieceBColor); //The first spot on the side where the captured piece can be put
@@ -206,6 +207,7 @@ function dotClicked(movedFromSquare, movedToSquare){
         var colorAndStuff = movedFromHTML.split("=")[2].replace("\"","").split("-")[0]+"-";
         var innerHTMLList = movedFromHTML.split("\"");
         var newHTMLInner = (innerHTMLList[0]+"\""+innerHTMLList[1]+"\""+innerHTMLList[2]+"\""+colorAndStuff+movedToSquare+"\">");
+        newSquareID1 = newHTMLInner.split(">")[0].split("\"").reverse()[1];
         lItems[movedToSquare].innerHTML = newHTMLInner;
     }
 
@@ -264,7 +266,7 @@ function dotClicked(movedFromSquare, movedToSquare){
     
     if(pieceAColor == "blue"){
         if (result == 1){
-            flipSinglePiece(squareID1);
+            flipSinglePiece(newSquareID1);
         }
         flipPieces("blue");
         
@@ -273,7 +275,7 @@ function dotClicked(movedFromSquare, movedToSquare){
         // renable this latter
         
         if (result == 1){
-            flipSinglePiece(squareID1);
+            flipSinglePiece(newSquareID1);
         }
         flipPieces("red");
         if (result == -1){
@@ -284,7 +286,7 @@ function dotClicked(movedFromSquare, movedToSquare){
     else if(pieceAColor == "red"){
         if (result == 1)
         {
-            flipSinglePiece(squareID1);  //This squareid is no longer correct since the piece has moved to a new square, so we need to get the new square name from somewhere
+            flipSinglePiece(newSquareID1);  
         }
         flipPieces("red");
         
@@ -294,7 +296,7 @@ function dotClicked(movedFromSquare, movedToSquare){
         
         if (result == 1)
         {
-            flipSinglePiece(squareID1);
+            flipSinglePiece(newSquareID1);
         }
         flipPieces("blue");
         if (result == -1)
