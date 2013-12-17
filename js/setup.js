@@ -78,26 +78,20 @@ function boardPiecePlacement(pieceName, playerColor){
 		return;
 	
 	if (color == "blue" && playerColor == "blue"){ // if it is a blue piece, only check the top half of the board
-	for(var i = 0; i < 40; i++)
-	{
-	checkstatus(i, square);
-
-	if(i != square) //check so you don't put a dot on the piece you clicked on
-		activateDot(square, i, "boardToBoard");
-	}
+		for(var i = 0; i < 40; i++){
+			checkstatus(i, square);
+			if(i != square) //check so you don't put a dot on the piece you clicked on
+				activateDot(square, i, "boardToBoard");
+		}
 	}
 
 	else if (color == "red" && playerColor == "red"){ // if it is a red piece, check the bottom part
-	for (var j = 60; j < 100; j++)
-	{
-	checkstatus(j-20, square);
-
-	if(j != square) //check so you don't put a dot on the piece you clicked on
-		activateDot(square, j, "boardToBoard");
+		for (var j = 60; j < 100; j++){
+			checkstatus(j-20, square);
+			if(j != square) //check so you don't put a dot on the piece you clicked on
+				activateDot(square, j, "boardToBoard");
+			}
 	}
-
-	}
-
 }
 
 
@@ -105,17 +99,11 @@ function boardPiecePlacement(pieceName, playerColor){
 function checkstatus(squareNumber, movedFromSquare){
     var lItems = document.getElementById("pieceHolder").getElementsByTagName("li");
     var currentSquare = (lItems[squareNumber].innerHTML).split('"').reverse()[1];
-
-
-    if (currentSquare.split("-")[0] == "blankSquare")
-        {
-            activateDot(movedFromSquare, squareNumber, "boardToSide");
-            return 1;
-        }
-
+    if (currentSquare.split("-")[0] == "blankSquare"){
+        activateDot(movedFromSquare, squareNumber, "boardToSide");
+        return 1;
+    }
 }
-
-
 
 function activateDot(movedFromSquare, movedToSquare, type){
 
@@ -124,36 +112,18 @@ function activateDot(movedFromSquare, movedToSquare, type){
 	var currentHTML;
 	var newHTML;
 
-	if(type == "sideToBoard"){//if the piece you clicked on was on the side, moving to board
-	currentHTML = board[movedToSquare].innerHTML;
-
-
-	newHTML = currentHTML+'<div class="moveCircle" id="listenForClick'+movedToSquare+'"></div>';
-
-	board[movedToSquare].innerHTML = newHTML;
-	document.getElementById("listenForClick"+movedToSquare).onclick = function(){
-		dotClicked(movedFromSquare, movedToSquare, "sideToBoard");
-	};
+	if (type != "boardToSide"){ 
+		currentHTML = board[movedToSquare].innerHTML;
+		newHTML = currentHTML+'<div class="moveCircle" id="listenForClick'+movedToSquare+'"></div>';
+		board[movedToSquare].innerHTML = newHTML;
+		document.getElementById("listenForClick"+movedToSquare).onclick = function(){
+			dotClicked(movedFromSquare, movedToSquare, type);
+		};
 	}
-
-	if(type == "boardToBoard"){ // if the piece you clicked on was on the board, moving to board
-	currentHTML = board[movedToSquare].innerHTML;
-	
-	newHTML = currentHTML+'<div class="moveCircle" id="listenForClick'+movedToSquare+'"></div>';
-
-	board[movedToSquare].innerHTML = newHTML;
-	document.getElementById("listenForClick"+movedToSquare).onclick = function(){
-		dotClicked(movedFromSquare, movedToSquare, "boardToBoard");
-	};
-	}
-
 	if(type == "boardToSide"){ // if the piece you clicked on was on the board and you want to move it to the side
-	currentHTML = sideboard[movedToSquare].innerHTML;
-	// add side to this
-	newHTML = currentHTML+'<div class="moveCircle" id="listenForClickSide'+movedToSquare+'"></div>';
-
-   
-}
+		currentHTML = sideboard[movedToSquare].innerHTML;
+		newHTML = currentHTML+'<div class="moveCircle" id="listenForClickSide'+movedToSquare+'"></div>';
+	}
 }
 
 function dotClicked(movedFromSquare, movedToSquare, type){
@@ -177,7 +147,6 @@ function dotClicked(movedFromSquare, movedToSquare, type){
 	}
 
 	var squareID1 = (movedFromHTML).split(">")[0].split('"').reverse()[1];
-
 	var squareID2 = (movedToHTML).split(">")[0].split('"').reverse()[1];
 	
 	var movedToHTMLUpdated = movedToHTML.replace(new RegExp('-[0-9][0-9]"|-[0-9]"','g'),"-"+squareID1+'"');
@@ -203,7 +172,6 @@ function dotClicked(movedFromSquare, movedToSquare, type){
 
 	var squareList=document.getElementById('squareList');
 	var pieceHolder =document.getElementById('pieceHolder');
-	//sortList(pieceHolder);
 
 	var playerColor = colorOfClick(squareID1); //used to tell whose turn it is
 	var sideboardInner= pieceHolder.innerHTML;
@@ -225,17 +193,16 @@ function dotClicked(movedFromSquare, movedToSquare, type){
 
 
 function colorOfClick(idname){
-
-		if ((idname).indexOf("blue") != -1){
-			return "blue";
-		}
-		else if ((idname).indexOf("red") != -1){
-			return "red";
-		}
-		else{
-			return "blank";
-		}
+	if ((idname).indexOf("blue") != -1){
+		return "blue";
 	}
+	else if ((idname).indexOf("red") != -1){
+		return "red";
+	}
+	else{
+		return "blank";
+	}
+}
 	
 function deleteAllDots(){
     "use strict";
@@ -245,8 +212,8 @@ function deleteAllDots(){
         for (var i = 0; i < size; i++){
             var line = board[i].innerHTML;
             if (line.indexOf("moveCircle") != -1){ // section to change
-                board[i].innerHTML = line.replace(new RegExp("(<div class=\"moveCircle\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircle\" id=\"listenForClick.\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick.\"></div>)","g"),"");
-                }
+            board[i].innerHTML = line.replace(new RegExp("(<div class=\"moveCircle\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircle\" id=\"listenForClick.\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick.\"></div>)","g"),"");
+            }
         }
     }
     deleteDots("squareList",100)
