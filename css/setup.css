@@ -23,14 +23,9 @@ body{
     margin-top: 0px;
 }
 #playingField ul li{
-    
-    /*padding-right: 50px;*/
-    /*width: 100px;*/
-    /*height: 100px;*/
     display: block;
     display: inline;
     padding-right: 52px;
-    /*background-color: red;*/
 }
 #playingField ul li img{
     padding-left: 0px;
@@ -69,14 +64,11 @@ ul li div{
     width: 400px;
 }
 #pieceHolder li{
-    /*list-style: none;*/
     display: inline;
 }
 #pieceHolder li img{
     width: 44px;
     height: 65px;
-    /*width: 10%;*/
-    /*height: 10%*/
 }
 
 #pieceHolder div[id*="blankSquare"] {   
@@ -98,16 +90,9 @@ ul li div{
     opacity: .5;
     width: 20px;
 }
-#startButton{
-    /*margin-top: 600px;*/
+#startButton,
+#redTurn{
     padding-left: 1100px;
-    -moz-transform:scale(5);
-    -webkit-transform:scale(5);
-    transform:scale(5);
-
-}
-#startGameTest{
-    padding-left: 1200px;
     -moz-transform:scale(5);
     -webkit-transform:scale(5);
     transform:scale(5);
