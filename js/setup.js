@@ -295,7 +295,7 @@ function flipPieces(color){
 // }
 
 //I'm using some JQuery to important deleteAllDots
-$.getScript("dots.js", function(){}); 
+$.getScript("dots.js", function(){});
 
 
 /*function sortList(ul){

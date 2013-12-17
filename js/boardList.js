@@ -56,11 +56,11 @@ function posmoves(pieceName){
     {
 
         if (square % 10 != 9) // check to the right
-            if (square+1 % 10 != 9 && checkstatus(square+1, color, square) == 1)
+            if (checkstatus(square + 1, color, square) == 1 && (square + 1) % 10 != 9)
                 recursive(square+2, "r", square);
 
         if (square % 10 !== 0) // check to the left
-            if (square-1 % 10 !== 0 && checkstatus(square-1, color, square) == 1)
+            if (checkstatus(square-1, color, square) == 1 && (square-1) % 10 !== 0  )
                 recursive(square-2, "l", square);
             
         if (square - 10 > 0) // check up
@@ -105,6 +105,34 @@ function checkstatus(squareNumber, color, movedFromSquare){
         activateDot(movedFromSquare, squareNumber, "combat");
 }
 
+function checkSideboard (color){
+    var redLItems = document.getElementById("redPieceHolder").getElementsByTagName("li");
+    var blueLItems = document.getElementById("bluePieceHolder").getElementsByTagName("li");
+    var currentSquare;
+    
+    if (color == "blue"){
+
+        for (var i = 0; i < 40; i++){
+           currentSquare = (blueLItems[i].innerHTML).split("\"").reverse()[1];
+           if (currentSquare.split("-")[0] == "blankSquare")
+            {
+                return i;
+            }
+        }
+    }
+
+    if(color == "red"){
+        for (var j = 0; j < 40; j++){
+           currentSquare = (redLItems[j].innerHTML).split("\"").reverse()[1];
+           if (currentSquare.split("-")[0] == "blankSquare")
+            {
+                return j;
+            }
+        }
+    }
+
+}
+
 function activateDot(movedFromSquare, movedToSquare, type){
     "use strict";
     var lItems = document.getElementById("squareList").getElementsByTagName("li");
@@ -134,12 +162,19 @@ function sleep(milliseconds) {
 function dotClicked(movedFromSquare, movedToSquare){
     "use strict";
     var lItems = document.getElementById("squareList").getElementsByTagName("li");
+    var redSideLItems = document.getElementById("redPieceHolder").getElementsByTagName("li");
+    var blueSideLItems = document.getElementById("bluePieceHolder").getElementsByTagName("li");
+
     var movedFromHTML = lItems[movedFromSquare].innerHTML;
+    var movedToHTML = lItems[movedToSquare].innerHTML;
+
     var squareID1 = (lItems[movedFromSquare].innerHTML).split(">")[0].split("\"").reverse()[1]; // gets the id
     var pieceA = squareID1.split("-")[0].replace("blue", "").replace("red", ""); // gets the name from the id
+    var pieceAColor = colorOfClick(squareID1);
 
     var squareID2 = (lItems[movedToSquare].innerHTML).split(">")[0].split("\"").reverse()[1]; // gets the id
     var pieceB = squareID2.split("-")[0].replace("blue", "").replace("red", ""); // gets the name from the id
+    var pieceBColor = colorOfClick(squareID2);
 
     var result = combat(pieceA, pieceB);
     // -1 do nothing 
@@ -149,17 +184,64 @@ function dotClicked(movedFromSquare, movedToSquare){
         flipSinglePiece(squareID2);
         alert("RAAAAAHHHAHAHAHAHHHHHAAHHHHH");
     }
+    var openSideSquareA;
+    var openSideSquareB;
     // 3 is for when you attack a blank square
-    if (result == 1 || result == 3){
-        // 1. Replace the and then paste it into the spot in the list it needs to go
+    if (result == 1){
+        // The squareID2 needs to be moved to the sideboard
+        openSideSquareB = checkSideboard(pieceBColor); //The first spot on the side where the captured piece can be put
+        if(pieceBColor == "red")
+        {
+            redSideLItems[openSideSquareB].innerHTML = movedToHTML;
+        }
+        else if(pieceBColor == "blue"){
+            blueSideLItems[openSideSquareB].innerHTML = movedToHTML;
+        }
+
+
         var colorAndStuff = movedFromHTML.split("=")[2].replace("\"","").split("-")[0]+"-";
         var innerHTMLList = movedFromHTML.split("\"");
         var newHTMLInner = (innerHTMLList[0]+"\""+innerHTMLList[1]+"\""+innerHTMLList[2]+"\""+colorAndStuff+movedToSquare+"\">");
         lItems[movedToSquare].innerHTML = newHTMLInner;
     }
 
-    else if (result === 0)
+    else if(result == 3){ // for when you attack a blank square
+        var colorAndStuff = movedFromHTML.split("=")[2].replace("\"","").split("-")[0]+"-";
+        var innerHTMLList = movedFromHTML.split("\"");
+        var newHTMLInner = (innerHTMLList[0]+"\""+innerHTMLList[1]+"\""+innerHTMLList[2]+"\""+colorAndStuff+movedToSquare+"\">");
+        lItems[movedToSquare].innerHTML = newHTMLInner;
+    }
+
+    else if(result == -1){
+        // squareID1 needs to be moved to the sideboard
+        openSideSquareA = checkSideboard(pieceAColor);
+        if(pieceAColor == "red")
+        {
+            redSideLItems[openSideSquareA].innerHTML = movedFromHTML;
+        }
+        else if(pieceAColor == "blue"){
+            blueSideLItems[openSideSquareA].innerHTML = movedFromHTML;
+        }
+
+    }
+
+    else if (result === 0){// If they tie
+        // Both squareids need to be moved to the sideboard
+        openSideSquareA = checkSideboard(pieceAColor);
+        openSideSquareB = checkSideboard(pieceBColor);
+        if(pieceAColor == "red")
+        {
+            redSideLItems[openSideSquareA].innerHTML = movedFromHTML;
+            blueSideLItems[openSideSquareB].innerHTML = movedToHTML;
+        }
+        else if(pieceAColor == "blue"){
+            blueSideLItems[openSideSquareA].innerHTML = movedFromHTML;
+            redSideLItems[openSideSquareB].innerHTML = movedToHTML;
+        }
+
         lItems[movedToSquare].innerHTML = "<div id=\"blankSquare-"+movedToSquare+"\">";
+
+    }
 
     else if (result == 2){ // End the game (Call an endgame(playerX) function)
         // alert("Game!"); doesnt like alerts
@@ -176,7 +258,7 @@ function dotClicked(movedFromSquare, movedToSquare){
     else{localStorage.setItem("turn", "blue");}
 
     
-    if(colorOfClick(squareID1) == "blue"){
+    if(pieceAColor == "blue"){
         if (result == 1)
         {
             flipSinglePiece(squareID1);
@@ -198,7 +280,7 @@ function dotClicked(movedFromSquare, movedToSquare){
         }
     }
 
-    else if(colorOfClick(squareID1) == "red"){
+    else if(pieceAColor == "red"){
         if (result == 1)
         {
             flipSinglePiece(squareID1);  //This squareid is no longer correct since the piece has moved to a new square, so we need to get the new square name from somewhere
@@ -338,6 +420,7 @@ function flipSinglePiece(pieceName){
         }
     }
 }
+
 function deleteAllDots(){
     "use strict";
     var lines = document.getElementById("squareList").getElementsByTagName("li");
@@ -348,3 +431,4 @@ function deleteAllDots(){
             }
     }
 }
+
