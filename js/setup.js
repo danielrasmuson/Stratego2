@@ -256,14 +256,15 @@ function colorOfClick(idname){
 	}
 	
 function deleteAllDots(){
-	var allHTML = document.documentElement.innerHTML;
-	cleanedHTML = allHTML.replace(new RegExp('(<div class="moveCircle" id="listenForClick.."></div>)|(<div class="moveCircle" id="listenForClick."></div>)|(<div class="moveCircle" id="listenForClickSide.."></div>)|(<div class="moveCircle" id="listenForClickSide."></div>)','g'),"");
-	// add in when youre ready for side dot
-	
-	
-	document.documentElement.innerHTML = cleanedHTML;
-
-	}
+    "use strict";
+    var lines = document.getElementById("squareList").getElementsByTagName("li");
+    for (var i = 0; i < 100; i++){
+        var line = lines[i].innerHTML;
+        if (line.indexOf("moveCircle") != -1){ // section to change
+            lines[i].innerHTML = line.replace(new RegExp("(<div class=\"moveCircle\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircle\" id=\"listenForClick.\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick.\"></div>)","g"),"");
+            }
+    }
+}
 
 function flipPieces(color){
     "use strict";
@@ -292,9 +293,7 @@ function flipPieces(color){
 //     // add in when youre ready for side dot
 //     document.documentElement.innerHTML = cleanedHTML;
 // }
-<<<<<<< HEAD
-function sortList(ul){
-=======
+
 //I'm using some JQuery to important deleteAllDots
 $.getScript("dots.js", function(){}); 
 
@@ -384,4 +383,4 @@ $.getScript("test.js", function(){
 });
 =======
 }*/
->>>>>>> 51eed65537d7e5ab99d9e8b1fc4a5c6225567d3f
+
