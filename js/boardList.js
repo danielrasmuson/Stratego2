@@ -182,7 +182,8 @@ function dotClicked(movedFromSquare, movedToSquare){
     {
         // alert(squareID2); // doesnt like alerts
         flipSinglePiece(squareID2);
-        alert("RAAAAAHHHAHAHAHAHHHHHAAHHHHH");
+        sleep(1000);
+        alert("look at what piece you took");
     }
     var openSideSquareA;
     var openSideSquareB;
@@ -259,8 +260,7 @@ function dotClicked(movedFromSquare, movedToSquare){
 
     
     if(pieceAColor == "blue"){
-        if (result == 1)
-        {
+        if (result == 1){
             flipSinglePiece(squareID1);
         }
         flipPieces("blue");
@@ -269,13 +269,11 @@ function dotClicked(movedFromSquare, movedToSquare){
         sleep(10);
         // renable this latter
         
-        if (result == 1)
-        {
+        if (result == 1){
             flipSinglePiece(squareID1);
         }
         flipPieces("red");
-        if (result == -1)
-        {
+        if (result == -1){
             flipSinglePiece(squareID2);
         }
     }
