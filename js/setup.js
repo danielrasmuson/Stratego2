@@ -5,7 +5,7 @@ window.onload=function(){
     
 	alert("Blue player setup");
 
-	setupOnClick("blue")
+	setupOnClick("blue");
 };
 
 function doFunction(){
@@ -112,7 +112,7 @@ function activateDot(movedFromSquare, movedToSquare, type){
 	var currentHTML;
 	var newHTML;
 
-	if (type != "boardToSide"){ 
+	if (type != "boardToSide"){
 		currentHTML = board[movedToSquare].innerHTML;
 		newHTML = currentHTML+'<div class="moveCircle" id="listenForClick'+movedToSquare+'"></div>';
 		board[movedToSquare].innerHTML = newHTML;
@@ -216,8 +216,8 @@ function deleteAllDots(){
             }
         }
     }
-    deleteDots("squareList",100)
-    deleteDots("pieceHolder",80)
+    deleteDots("squareList",100);
+    deleteDots("pieceHolder",80);
 }
 
 function flipPieces(color){
