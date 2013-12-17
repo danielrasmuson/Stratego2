@@ -183,13 +183,8 @@ function dotClicked(movedFromSquare, movedToSquare){
     {
         // alert(squareID2); // doesnt like alerts
         flipSinglePiece(squareID2);
-<<<<<<< HEAD
-        sleep(1000);
-        alert("look at what piece you took");
-=======
         var changedMovedToHTML = lItems[movedToSquare].innerHTML;
         alert("RAAAAAHHHAHAHAHAHHHHHAAHHHHH");
->>>>>>> 556ee327000bf7dc1b98bb271eb2fa068246a4ba
     }
     var openSideSquareA;
     var openSideSquareB;
