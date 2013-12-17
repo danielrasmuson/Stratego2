@@ -160,7 +160,8 @@ function sleep(milliseconds) {
 }
 
 function dotClicked(movedFromSquare, movedToSquare){
-    "use strict";
+    "use strict"
+    deleteAllDots();
     var lItems = document.getElementById("squareList").getElementsByTagName("li");
     var redSideLItems = document.getElementById("redPieceHolder").getElementsByTagName("li");
     var blueSideLItems = document.getElementById("bluePieceHolder").getElementsByTagName("li");
@@ -182,6 +183,7 @@ function dotClicked(movedFromSquare, movedToSquare){
     {
         // alert(squareID2); // doesnt like alerts
         flipSinglePiece(squareID2);
+        var changedMovedToHTML = lItems[movedToSquare].innerHTML;
         alert("RAAAAAHHHAHAHAHAHHHHHAAHHHHH");
     }
     var openSideSquareA;
@@ -192,10 +194,12 @@ function dotClicked(movedFromSquare, movedToSquare){
         openSideSquareB = checkSideboard(pieceBColor); //The first spot on the side where the captured piece can be put
         if(pieceBColor == "red")
         {
-            redSideLItems[openSideSquareB].innerHTML = movedToHTML;
+            flipSinglePiece(squareID2);
+            redSideLItems[openSideSquareB].innerHTML = changedMovedToHTML;
         }
         else if(pieceBColor == "blue"){
-            blueSideLItems[openSideSquareB].innerHTML = movedToHTML;
+            flipSinglePiece(squareID2);
+            blueSideLItems[openSideSquareB].innerHTML = changedMovedToHTML;
         }
 
 
@@ -232,11 +236,11 @@ function dotClicked(movedFromSquare, movedToSquare){
         if(pieceAColor == "red")
         {
             redSideLItems[openSideSquareA].innerHTML = movedFromHTML;
-            blueSideLItems[openSideSquareB].innerHTML = movedToHTML;
+            blueSideLItems[openSideSquareB].innerHTML = changedMovedToHTML;
         }
         else if(pieceAColor == "blue"){
             blueSideLItems[openSideSquareA].innerHTML = movedFromHTML;
-            redSideLItems[openSideSquareB].innerHTML = movedToHTML;
+            redSideLItems[openSideSquareB].innerHTML = changedMovedToHTML;
         }
 
         lItems[movedToSquare].innerHTML = "<div id=\"blankSquare-"+movedToSquare+"\">";
