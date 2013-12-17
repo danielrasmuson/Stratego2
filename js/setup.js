@@ -257,13 +257,18 @@ function colorOfClick(idname){
 	
 function deleteAllDots(){
     "use strict";
-    var lines = document.getElementById("squareList").getElementsByTagName("li");
-    for (var i = 0; i < 100; i++){
-        var line = lines[i].innerHTML;
-        if (line.indexOf("moveCircle") != -1){ // section to change
-            lines[i].innerHTML = line.replace(new RegExp("(<div class=\"moveCircle\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircle\" id=\"listenForClick.\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick.\"></div>)","g"),"");
-            }
+    // clear main board
+    function deleteDots(elementGroup,size){
+        var board = document.getElementById(elementGroup).getElementsByTagName("li");
+        for (var i = 0; i < size; i++){
+            var line = board[i].innerHTML;
+            if (line.indexOf("moveCircle") != -1){ // section to change
+                board[i].innerHTML = line.replace(new RegExp("(<div class=\"moveCircle\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircle\" id=\"listenForClick.\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick.\"></div>)","g"),"");
+                }
+        }
     }
+    deleteDots("squareList",100)
+    deleteDots("pieceHolder",79)
 }
 
 function flipPieces(color){
@@ -286,101 +291,3 @@ function flipPieces(color){
         }
     }
 }
-
-// function deleteAllDots(){
-//     var allHTML = document.documentElement.innerHTML;
-//     cleanedHTML = allHTML.replace(new RegExp('(<div class="moveCircle" id="listenForClick.."></div>)|(<div class="moveCircle" id="listenForClick."></div>)|(<div class="moveCircle" id="listenForClickSide.."></div>)|(<div class="moveCircle" id="listenForClickSide."></div>)','g'),"");
-//     // add in when youre ready for side dot
-//     document.documentElement.innerHTML = cleanedHTML;
-// }
-
-//I'm using some JQuery to important deleteAllDots
-
-
-
-/*function sortList(ul){
->>>>>>> 51eed65537d7e5ab99d9e8b1fc4a5c6225567d3f
-    var new_ul = ul.cloneNode(false);
-
-    // Add all lis to an array
-    var bluelis = []; // the list of all the blue pieces
-    var redlis = []; // list of all red pieces
-    for(var i = 0; i < ul.childNodes.length/2; i++){ //this part is not working
-        if(ul.childNodes[i].nodeName === 'LI'){
-            bluelis.push(ul.childNodes[i]);
-        }
-    }
-
-    for (var j = ul.childNodes.length/2; j < ul.childNodes.length; j++){
-        if(ul.childNodes[j].nodeName === 'LI'){
-            redlis.push(ul.childNodes[j]);
-        }
-    }
-
-    // Sort the lis in descending order
-    // @TODO combine these two pieces of code using bluelis and redlis as variable
-    //              would be a lot cleaner
-    bluelis.sort(function(a, b){
-        var aID = a.innerHTML.split(">")[0].split('"').reverse()[1].split("-")[0].replace("blue","").replace("red", "");
-        var bID = b.innerHTML.split(">")[0].split('"').reverse()[1].split("-")[0].replace("blue","").replace("red", "");
-
-        if(aID==bID)
-            return 0;
-        else if(aID == "blankSquare")
-            return -1;
-         else if(bID == "blankSquare")
-            return 1;
-         else if(aID>bID)
-            return 1;
-         else 
-            return -1;  
-       
-    });
-
-    redlis.sort(function(a, b){
-        var aID = a.innerHTML.split(">")[0].split('"').reverse()[1].split("-")[0].replace("blue","").replace("red", "");
-        var bID = b.innerHTML.split(">")[0].split('"').reverse()[1].split("-")[0].replace("blue","").replace("red", "");
-
-        if(aID==bID)
-            return 0;
-        else if(aID == "blankSquare")
-            return -1;
-         else if(bID == "blankSquare")
-            return 1;
-         else if(aID>bID)
-            return 1;
-         else 
-            return -1;  
-       
-    });
-    // Add them into the ul in order
-    for(var k = 0; k < 40; k++)
-        new_ul.appendChild(bluelis[k]);
-
-    for(var l = 40; l < 80; l++)
-        new_ul.appendChild(redlis[l-40])
-
-    ul.parentNode.replaceChild(new_ul, ul);
-<<<<<<< HEAD
-}
-
-// @TODO not unexpectedly deleteAllDots is not working for sideboard
-function deleteAllDots(){
-    "use strict";
-    var lines = document.getElementById("squareList").getElementsByTagName("li");
-    for (var i = 0; i < 100; i++){
-        var line = lines[i].innerHTML;
-        if (line.indexOf("moveCircle") != -1){ // section to change
-            lines[i].innerHTML = line.replace(new RegExp("(<div class=\"moveCircle\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircle\" id=\"listenForClick.\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick..\"></div>)|(<div class=\"moveCircleCombat\" id=\"listenForClick.\"></div>)","g"),"");
-            }
-    }
-}
-
-$.getScript("test.js", function(){
-
-   alert("Script loaded and executed.");
-   // Here you can use anything you defined in the loaded script
-});
-=======
-}*/
-
