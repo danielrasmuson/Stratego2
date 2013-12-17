@@ -1,33 +1,29 @@
 window.onload=function(){
-
-	var squareList=document.getElementById('squareList');
-	var pieceHolder =document.getElementById('pieceHolder');
-	//
+    "use strict";
+	var squareList=document.getElementById("squareList");
+	var pieceHolder =document.getElementById("pieceHolder");
+    
 	alert("Blue player setup");
 
-	squareList.onclick=function(e){
-		deleteAllDots();
-		boardPiecePlacement(e.target.id, "blue");
-	};
-
-	pieceHolder.onclick=function(e){
-		deleteAllDots();
-		sidePiecePlacement(e.target.id, "blue");
-	};
+	setupOnClick("blue")
 };
 
 function doFunction(){
-	flipPieces("red");
+	// flipPieces("red");
 	var listTextStr = document.getElementById('squareList').innerHTML;
 	localStorage.setItem('testObject', listTextStr);
 	window.location.assign("boardlist.html");
 	// document.write(pathname.boardlist.html);
 }
 
-function sidePiecePlacement(pieceName, playerColor){
-	var squareList=document.getElementById('squareList');
-	var pieceHolder =document.getElementById('pieceHolder');
-	
+function redTurn(){
+	flipPieces("blue");
+	setupOnClick("red");
+	var documentPage = document.getElementById('redTurn');
+	documentPage.innerHTML = '';
+}
+
+function setupOnClick(playerColor){
 	squareList.onclick=function(e){
 		deleteAllDots();
 		boardPiecePlacement(e.target.id, playerColor);
@@ -37,6 +33,13 @@ function sidePiecePlacement(pieceName, playerColor){
 		deleteAllDots();
 		sidePiecePlacement(e.target.id, playerColor);
 	};
+}
+
+function sidePiecePlacement(pieceName, playerColor){
+	var squareList=document.getElementById('squareList');
+	var pieceHolder =document.getElementById('pieceHolder');
+	
+	setupOnClick(playerColor);
 
 	var name = pieceName.split("-")[0].replace("blue", "").replace("red", "");
 	var color = colorOfClick(pieceName);
@@ -65,15 +68,7 @@ function boardPiecePlacement(pieceName, playerColor){
 	var squareList=document.getElementById('squareList');
 	var pieceHolder =document.getElementById('pieceHolder');
 	
-	squareList.onclick=function(e){
-		deleteAllDots();
-		boardPiecePlacement(e.target.id, playerColor);
-	};
-
-	pieceHolder.onclick=function(e){
-		deleteAllDots();
-		sidePiecePlacement(e.target.id, playerColor);
-	};
+	setupOnClick(playerColor);
 
 	var color = colorOfClick(pieceName);
 	var square = pieceName.split("-")[1];
@@ -181,10 +176,9 @@ function dotClicked(movedFromSquare, movedToSquare, type){
 		movedToHTML = board[movedToSquare].innerHTML;
 	}
 
-	var squareID1 = (movedFromHTML).split(">")[0].split('"').reverse()[1]; // gets the id
-	//alert(squareID1.split("-")[0].replace("blue","").replace("red", ""));
+	var squareID1 = (movedFromHTML).split(">")[0].split('"').reverse()[1];
 
-	var squareID2 = (movedToHTML).split(">")[0].split('"').reverse()[1]; // gets the id
+	var squareID2 = (movedToHTML).split(">")[0].split('"').reverse()[1];
 	
 	var movedToHTMLUpdated = movedToHTML.replace(new RegExp('-[0-9][0-9]"|-[0-9]"','g'),"-"+squareID1+'"');
 	var movedFromHTMLUpdated = movedFromHTML.replace(new RegExp('-[0-9][0-9]"|-[0-9]"','g'),"-"+squareID2+'"');
@@ -215,29 +209,17 @@ function dotClicked(movedFromSquare, movedToSquare, type){
 	var sideboardInner= pieceHolder.innerHTML;
 
 	if (((sideboardInner.match(/blankSquare/g)).length) >= 40 && playerColor == "blue"){
-		//make button that says, are you ready to submit? It will do these in the onclick
-		flipPieces("blue");
-		playerColor = "red";
+		var documentPage = document.getElementById('redTurn');
+		documentPage.innerHTML = '<input id="switchSetup" type="button" value="Submit" onclick="redTurn()" />';
 	}
 
 	if (((sideboardInner.match(/blankSquare/g)).length) >= 80){
-		var startButton = document.getElementById('startButton');
-		startButton.innerHTML = '<input id="startGame" type="button" value="Start Game" onclick="doFunction();" />';
+		alert("hello");
+		var documentPage = document.getElementById('startButton');
+		documentPage.innerHTML = '<input id="startGame" type="button" value="Start Game" onclick="doFunction()" />';
 	}
 
-	
-
-	squareList.onclick=function(e){
-		deleteAllDots();
-		boardPiecePlacement(e.target.id, playerColor);
-	};
-
-	pieceHolder.onclick=function(e){
-		deleteAllDots();
-		sidePiecePlacement(e.target.id, playerColor);
-	};
-
-
+	setupOnClick(playerColor);
 }
 
 
