@@ -4,6 +4,66 @@
 		"selected_items":
 		[
 			[
+				"padin",
+				"padding-top"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"styl",
+				"list-style"
+			],
+			[
+				"boardTo",
+				"boardToSide"
+			],
+			[
+				"play",
+				"playerColor"
+			],
+			[
+				"setu",
+				"setupOnClick"
+			],
+			[
+				"red",
+				"redTurn"
+			],
+			[
+				"do",
+				"documentPage"
+			],
+			[
+				"squ",
+				"squareList"
+			],
+			[
+				"side",
+				"sideBoard"
+			],
+			[
+				"sid",
+				"sideboard"
+			],
+			[
+				"pie",
+				"pieceHolder"
+			],
+			[
 				"dots",
 				"deleteAllDots"
 			],
@@ -38,10 +98,6 @@
 			[
 				"padd",
 				"padding-left"
-			],
-			[
-				"margin",
-				"margin-bottom"
 			],
 			[
 				"min",
@@ -123,12 +179,20 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 335.0,
+		"height": 375.0,
 		"selected_items":
 		[
 			[
+				"cal",
+				"Calculate"
+			],
+			[
 				"close",
 				"Project: Close"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
 			],
 			[
 				"remove",
@@ -395,7 +459,7 @@
 				"SublimeREPL: Python - IPython"
 			]
 		],
-		"width": 386.0
+		"width": 437.0
 	},
 	"console":
 	{
@@ -418,19 +482,23 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/boardList.js",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/master.css",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/boardlist.html",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/fwrmbglx.ayi.txt",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/test.js",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/setup.js.orig",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/boardList.js.orig",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/setup.html",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/randomToDo.txt",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/setup.css",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/setup.js",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/3pc1c3of.rns.txt",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/n3eguhu0.kx0.txt",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/e3ztwswy.g0o.txt",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/setup.css",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/boardList.js",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/setup.js",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/boardList.html",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/master.css",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/setup.html",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/test.js",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/dots.js",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/.gitignore",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/randomToDo.txt",
 		"/C/Users/Daniel/Desktop/stratego_TODO.txt",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/Stratego_Project.sublime-project",
 		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/ALS_Ultimate.sublime-workspace",
@@ -500,7 +568,6 @@
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/boardList.css",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/solveBlinking.txt",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/boardList.html",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/boardlist.html",
 		"/C/Users/Daniel/Desktop/Zoo3_Due_Tuesday/wellsHelp.txt",
 		"/C/Users/Daniel/Desktop/Zoo3_Due_Tuesday/RasmusonDZoo3SQL.txt",
 		"/C/Users/Daniel/Desktop/Zoo3_Due_Tuesday/RasmusonDZoo3Results.txt",
@@ -542,10 +609,7 @@
 		"/C/Users/Daniel/Desktop/RasmusonDView.txt",
 		"/C/Users/Daniel/Desktop/zoo2Results.txt",
 		"/C/Users/Daniel/Desktop/zoo2answers.txt",
-		"/C/Users/Daniel/Desktop/zoo2SQL.txt",
-		"/C/Users/Daniel/Desktop/zoo2Questions.txt",
-		"/C/Users/Daniel/Desktop/figuringOutCourses.txt",
-		"/C/Users/Daniel/Desktop/checker.py"
+		"/C/Users/Daniel/Desktop/zoo2SQL.txt"
 	],
 	"find":
 	{
@@ -564,6 +628,37 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"main",
+			"squareLi",
+			"boardList",
+			"playingField",
+			"padding-left",
+			"19",
+			"body",
+			"ul",
+			"lder",
+			"playingField",
+			">>",
+			"sleep",
+			"{",
+			"RAA",
+			"//",
+			"pieceHolder.onclick=functi",
+			"startGame",
+			"start",
+			"/*",
+			"startGame",
+			"alert",
+			"();",
+			";",
+			"startButton",
+			"doFunction",
+			"dofunction",
+			"elementID",
+			"mainBoard",
+			"line",
+			"lines",
+			"delete",
 			"deleteAll",
 			"delete",
 			"deletedots",
@@ -660,38 +755,7 @@
 			"font-size",
 			"font",
 			"margin",
-			"insideList",
-			"\"\"",
-			"&nbsp;",
-			"<.+?>",
-			"will be depreciated straight",
-			"uipment will be depreciated straight line to zero",
-			"$350,000",
-			"costs $350,000",
-			",",
-			"Select  First NameSorted Ascending, Last Name   Lab AttendanceView Actions for Lab Attendance\nSelect  Lab 11 Attendance (Nov. 18)View Actions for Lab 11 Attendance (Nov. 18)",
-			"- Click to FlagView progress for ",
-			"Question",
-			"question",
-			"/",
-			"”",
-			"squareList",
-			"'",
-			"\"",
-			"'",
-			"\"",
-			"'",
-			"\"",
-			"'\"'",
-			"'",
-			"\"",
-			"newHTML",
-			"var checker",
-			"checker0",
-			"deleteAllDots",
-			"setup",
-			"inner",
-			"ink rel=\"stylesheet\" ty"
+			"insideList"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -788,11 +852,43 @@
 		"selected_items":
 		[
 			[
+				"maste",
+				"css\\master.css"
+			],
+			[
+				"bo",
+				"html\\boardlist.html"
+			],
+			[
 				"board",
-				"html\\boardList.html"
+				"js\\boardList.js"
+			],
+			[
+				"bor",
+				"js\\boardList.js.orig"
 			],
 			[
 				"set",
+				"html\\setup.html"
+			],
+			[
+				"mast",
+				"css\\master.css"
+			],
+			[
+				"boar",
+				"js\\boardList.js"
+			],
+			[
+				"setu",
+				"css\\setup.css"
+			],
+			[
+				"setup",
+				"html\\setup.html"
+			],
+			[
+				"setup.js",
 				"js\\setup.js"
 			],
 			[
@@ -802,10 +898,6 @@
 			[
 				"mas",
 				"css\\master.css"
-			],
-			[
-				"bor",
-				"html\\boardList.html"
 			],
 			[
 				"vol",
@@ -936,18 +1028,6 @@
 				"PA5aStart.py"
 			],
 			[
-				"boar",
-				"js\\boardList.js"
-			],
-			[
-				"setup",
-				"js\\setup.js"
-			],
-			[
-				"bo",
-				"css\\boardList.css"
-			],
-			[
 				"sql",
 				"RasmusonDZoo3SQL.txt"
 			],
@@ -982,10 +1062,6 @@
 			[
 				"changes",
 				"cleanTextPython\\changes_nov15.txt"
-			],
-			[
-				"setu",
-				"html\\setup.html"
 			]
 		],
 		"width": 0.0
