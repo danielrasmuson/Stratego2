@@ -418,14 +418,15 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/master.css",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/boardList.html",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/e3ztwswy.g0o.txt",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/setup.css",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/boardList.js",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/setup.js",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/boardList.html",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/master.css",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/setup.html",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/test.js",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/setup.js",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/dots.js",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/setup.css",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/.gitignore",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/randomToDo.txt",
 		"/C/Users/Daniel/Desktop/stratego_TODO.txt",
@@ -544,8 +545,7 @@
 		"/C/Users/Daniel/Desktop/figuringOutCourses.txt",
 		"/C/Users/Daniel/Desktop/checker.py",
 		"/C/Users/Daniel/Desktop/zooQuestions2.txt",
-		"/C/Users/Daniel/Desktop/testsql.sql",
-		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/sql2.sublime-build"
+		"/C/Users/Daniel/Desktop/testsql.sql"
 	],
 	"find":
 	{
@@ -564,6 +564,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"deleteAll",
 			"delete",
 			"deletedots",
 			"delete",
@@ -690,8 +691,7 @@
 			"deleteAllDots",
 			"setup",
 			"inner",
-			"ink rel=\"stylesheet\" ty",
-			"delete"
+			"ink rel=\"stylesheet\" ty"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -788,6 +788,14 @@
 		"selected_items":
 		[
 			[
+				"board",
+				"html\\boardList.html"
+			],
+			[
+				"set",
+				"js\\setup.js"
+			],
+			[
 				"boa",
 				"js\\boardList.js"
 			],
@@ -797,14 +805,6 @@
 			],
 			[
 				"bor",
-				"html\\boardList.html"
-			],
-			[
-				"set",
-				"html\\setup.html"
-			],
-			[
-				"board",
 				"html\\boardList.html"
 			],
 			[

@@ -292,9 +292,6 @@ function flipPieces(color){
 //     // add in when youre ready for side dot
 //     document.documentElement.innerHTML = cleanedHTML;
 // }
-<<<<<<< HEAD
-function sortList(ul){
-=======
 //I'm using some JQuery to important deleteAllDots
 $.getScript("dots.js", function(){}); 
 
