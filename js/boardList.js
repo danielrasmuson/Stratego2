@@ -267,34 +267,6 @@ function dotClicked(movedFromSquare, movedToSquare){
         }
         flipPieces("blue");
         alert("switch people");
-        // alert("switch people");
-        // sleep(10);
-        // // renable this latter
-        // (function () {
-        //     var alertsToShow = [];
-        //     var dialogVisible = false;
-
-        //     function showPendingAlerts() {
-        //         if (dialogVisible || !alertsToShow.length) {
-        //             return;
-        //         }
-
-        //         dialogVisible = true;
-        //         (new Windows.UI.Popups.MessageDialog(alertsToShow.shift())).showAsync().done(function () {
-        //             dialogVisible = false;
-        //             showPendingAlerts();
-        //         })
-        //     }
-        //     window.alert = function (message) {
-        //         if (window.console && window.console.log) {
-        //             window.console.log(message);
-        //         }
-
-        //         alertsToShow.push(message);
-        //         showPendingAlerts();
-        //     }
-        // })();
-        // (new Windows.UI.Popups.MessageDialog("STOP!!!!!!!!!!1", "STOP!!!!!!!!!!1")).showAsync().done();
         if (result == 1){
             flipSinglePiece(newSquareID1);
         }
@@ -310,12 +282,8 @@ function dotClicked(movedFromSquare, movedToSquare){
         {
             flipSinglePiece(newSquareID1);  
         }
-        flipPieces("red");
-        
-        // alert("switch people");
-        // sleep(10);
-        //renable this latter
-        
+        flipPieces("red");        
+        alert("switch people");
         if (result == 1)
         {
             flipSinglePiece(newSquareID1);
@@ -328,11 +296,6 @@ function dotClicked(movedFromSquare, movedToSquare){
     }
     setupClick();
 }
-
-function alertFunc(){
-    alert("switch people");
-    alert("daniel!");
-};
 
 function recursive(movedToSquare, direction, movedFromSquare){
     
