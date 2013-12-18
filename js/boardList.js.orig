@@ -158,6 +158,10 @@ function sleep(milliseconds) {
 }
 
 function dotClicked(movedFromSquare, movedToSquare){
+<<<<<<< HEAD
+    
+=======
+>>>>>>> 4af13d6846c692261673077d721bc569f4c12c09
     deleteAllDots();
     var lItems = document.getElementById("squareList").getElementsByTagName("li");
     var redSideLItems = document.getElementById("redPieceHolder").getElementsByTagName("li");

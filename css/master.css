@@ -57,13 +57,15 @@ body{
 #squareList li .moveCircleCombat,
 #squareList li .moveCircle{
     border-radius: 50%;
-    position: absolute;
-    padding-left: 50px;
-    -moz-transform:scale(0.35);
-    -webkit-transform:scale(0.35);
-    transform:scale(0.35);
-    margin-left: -70px;
-    margin-top: 0px;
+    /*position: absolute;*/
+    /*padding-left: 50px;*/
+    -moz-transform:scale(0.7);
+    -webkit-transform:scale(0.7);
+    transform:scale(0.7);
+    margin-left: -45px;
+    margin-bottom: 20px;
+    height: 15px;
+    /*margin-top: -100px;*/
     opacity: .5;
 }
 #bluePieceHolder{
@@ -83,3 +85,14 @@ body{
     padding-bottom: 0px;
     padding-top: 0px;
 }
+
+#squareList li .moveCircle div {
+
+}
+    /*padding-left: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 44px;
+    height: 65px;
+    display: inline-block;
+}*/

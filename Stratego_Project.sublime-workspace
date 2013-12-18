@@ -183,12 +183,16 @@
 		"selected_items":
 		[
 			[
-				"cal",
-				"Calculate"
+				"cl",
+				"Project: Close"
 			],
 			[
 				"close",
 				"Project: Close"
+			],
+			[
+				"cal",
+				"Calculate"
 			],
 			[
 				"disab",
@@ -459,7 +463,7 @@
 				"SublimeREPL: Python - IPython"
 			]
 		],
-		"width": 437.0
+		"width": 386.0
 	},
 	"console":
 	{
@@ -483,13 +487,14 @@
 	"file_history":
 	[
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/boardList.js",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/master.css",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/boardlist.html",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/setup.html",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/Stratego_Project.sublime-project",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/master.css",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/fwrmbglx.ayi.txt",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/test.js",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/setup.js.orig",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/boardList.js.orig",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/setup.html",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/randomToDo.txt",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/setup.css",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/setup.js",
@@ -500,7 +505,6 @@
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/dots.js",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/.gitignore",
 		"/C/Users/Daniel/Desktop/stratego_TODO.txt",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/Stratego_Project.sublime-project",
 		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/ALS_Ultimate.sublime-workspace",
 		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/ALS_Ultimate.sublime-project",
 		"/C/Users/Daniel/Desktop/Sandy HTML Project/RevTrak_HTML_Project.sublime-project",
@@ -852,6 +856,22 @@
 		"selected_items":
 		[
 			[
+				"set",
+				"html\\setup.html"
+			],
+			[
+				"boar",
+				"html\\boardlist.html"
+			],
+			[
+				"board",
+				"js\\boardList.js"
+			],
+			[
+				"boardlist.",
+				"js\\boardList.js"
+			],
+			[
 				"maste",
 				"css\\master.css"
 			],
@@ -860,24 +880,12 @@
 				"html\\boardlist.html"
 			],
 			[
-				"board",
-				"js\\boardList.js"
-			],
-			[
 				"bor",
 				"js\\boardList.js.orig"
 			],
 			[
-				"set",
-				"html\\setup.html"
-			],
-			[
 				"mast",
 				"css\\master.css"
-			],
-			[
-				"boar",
-				"js\\boardList.js"
 			],
 			[
 				"setu",
