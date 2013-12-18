@@ -21,14 +21,12 @@ window.onload=function(){
     // var setupResults = localStorage.getItem('testObject')
     // squareList.innerHTML = setupResults;
 
-    // flipSinglePiece("red5-67");
-    "use strict";
     localStorage.setItem("turn", "blue");
     setupClick();
 };
 
 function posmoves(pieceName){
-    "use strict";
+    
     var name = pieceName.split("-")[0].replace("blue", "").replace("red", ""); // the name of the piece (Spy, Bomb, 9 etc..)
     var square = pieceName.split("-")[1]; // the position on the board
     square = parseInt(square, 10);
@@ -74,7 +72,7 @@ function posmoves(pieceName){
 }
 
 function colorOfClick(idname){
-        "use strict";
+        
         if ((idname).indexOf("blue") != -1){
             return "blue";
         }
@@ -87,7 +85,7 @@ function colorOfClick(idname){
     }
 
 function checkstatus(squareNumber, color, movedFromSquare){
-    "use strict";
+   
     var lItems = document.getElementById("squareList").getElementsByTagName("li");
     var currentSquare = (lItems[squareNumber].innerHTML).split("\"").reverse()[1];
 
@@ -134,7 +132,7 @@ function checkSideboard (color){
 }
 
 function activateDot(movedFromSquare, movedToSquare, type){
-    "use strict";
+
     var lItems = document.getElementById("squareList").getElementsByTagName("li");
     var currentHTML = lItems[movedToSquare].innerHTML;
     var newHTML = "";
@@ -150,7 +148,7 @@ function activateDot(movedFromSquare, movedToSquare, type){
     };
 }
 function sleep(milliseconds) {
-    "use strict";
+ 
     var start = new Date().getTime();
     for (var i = 0; i < 1e7; i++) {
         if ((new Date().getTime() - start) > milliseconds){
@@ -160,7 +158,7 @@ function sleep(milliseconds) {
 }
 
 function dotClicked(movedFromSquare, movedToSquare){
-    "use strict"
+    
     deleteAllDots();
     var lItems = document.getElementById("squareList").getElementsByTagName("li");
     var redSideLItems = document.getElementById("redPieceHolder").getElementsByTagName("li");
@@ -308,7 +306,7 @@ function dotClicked(movedFromSquare, movedToSquare){
 }
 
 function recursive(movedToSquare, direction, movedFromSquare){
-    "use strict";
+    
     var lItems = document.getElementById("squareList").getElementsByTagName("li");
     var currentSquare = (lItems[movedToSquare].innerHTML).split("\"").reverse()[1];
 
@@ -342,7 +340,7 @@ function recursive(movedToSquare, direction, movedFromSquare){
 
 
 function combat(a, b){ // a is the attacking piece, if a wins the function returns 1, if b wins it returns -1, otherwise returns 0 if they tie both die, or 2 if its a flag
-    "use strict";
+    
     if (a == b) // If they tie
         return 0;
 
@@ -376,7 +374,7 @@ function combat(a, b){ // a is the attacking piece, if a wins the function retur
 
 // a function to switch the backs of the pieces
 function flipPieces(color){
-    "use strict";
+
     var lines = document.getElementById("squareList").getElementsByTagName("li");
     // var currentSquare = (lItems[squareNumber].innerHTML).split("\"").reverse()[1];
 
@@ -398,7 +396,7 @@ function flipPieces(color){
 
 // a function to switch the backs of the pieces
 function flipSinglePiece(pieceName){
-    "use strict";
+
     var lines = document.getElementById("squareList").getElementsByTagName("li");
     // var currentSquare = (lItems[squareNumber].innerHTML).split("\"").reverse()[1];
 
@@ -425,7 +423,7 @@ function flipSinglePiece(pieceName){
 }
 
 function deleteAllDots(){
-    "use strict";
+ 
     var lines = document.getElementById("squareList").getElementsByTagName("li");
     for (var i = 0; i < 100; i++){
         var line = lines[i].innerHTML;
