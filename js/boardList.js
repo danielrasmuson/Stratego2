@@ -160,7 +160,6 @@ function sleep(milliseconds) {
 }
 
 function dotClicked(movedFromSquare, movedToSquare){
-    "use strict"
     deleteAllDots();
     var lItems = document.getElementById("squareList").getElementsByTagName("li");
     var redSideLItems = document.getElementById("redPieceHolder").getElementsByTagName("li");
@@ -269,14 +268,39 @@ function dotClicked(movedFromSquare, movedToSquare){
             flipSinglePiece(newSquareID1);
         }
         flipPieces("blue");
-        
         alert("switch people");
-        sleep(10);
-        // renable this latter
-        
+        // alert("switch people");
+        // sleep(10);
+        // // renable this latter
+        // (function () {
+        //     var alertsToShow = [];
+        //     var dialogVisible = false;
+
+        //     function showPendingAlerts() {
+        //         if (dialogVisible || !alertsToShow.length) {
+        //             return;
+        //         }
+
+        //         dialogVisible = true;
+        //         (new Windows.UI.Popups.MessageDialog(alertsToShow.shift())).showAsync().done(function () {
+        //             dialogVisible = false;
+        //             showPendingAlerts();
+        //         })
+        //     }
+        //     window.alert = function (message) {
+        //         if (window.console && window.console.log) {
+        //             window.console.log(message);
+        //         }
+
+        //         alertsToShow.push(message);
+        //         showPendingAlerts();
+        //     }
+        // })();
+        // (new Windows.UI.Popups.MessageDialog("STOP!!!!!!!!!!1", "STOP!!!!!!!!!!1")).showAsync().done();
         if (result == 1){
             flipSinglePiece(newSquareID1);
         }
+
         flipPieces("red");
         if (result == -1){
             flipSinglePiece(squareID2);
@@ -290,8 +314,8 @@ function dotClicked(movedFromSquare, movedToSquare){
         }
         flipPieces("red");
         
-        alert("switch people");
-        sleep(10);
+        // alert("switch people");
+        // sleep(10);
         //renable this latter
         
         if (result == 1)
@@ -306,6 +330,11 @@ function dotClicked(movedFromSquare, movedToSquare){
     }
     setupClick();
 }
+
+function alertFunc(){
+    alert("switch people");
+    alert("daniel!");
+};
 
 function recursive(movedToSquare, direction, movedFromSquare){
     "use strict";
@@ -390,7 +419,13 @@ function flipPieces(color){
             }
             else{
                 // change to backIMG
-                lines[i].innerHTML = line.replace(new RegExp("/(.*)png","g"),"/images/pieces/"+color+"Back.png");
+                var newSquare = line.replace(new RegExp("/(.*)png","g"),"/images/pieces/"+color+"Back.png")
+                // alert(newSquare)
+                lines[i].innerHTML = newSquare;
+                // var wholeDocument = document.documentElement.outerHTML
+                // alert(wholeDocument)
+                // document.write(wholeDocument)
+
             }
         }
     }
