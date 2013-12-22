@@ -2,3 +2,5 @@
     8's left then they lose
     no 8's left tie
 @TODO - also probably make a sheet of todos
+@TODO - bottom row red cant click
+@TODO - make arrows 

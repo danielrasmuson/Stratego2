@@ -182,7 +182,6 @@ function dotClicked(movedFromSquare, movedToSquare, type){
 	}
 
 	if (((sideboardInner.match(/blankSquare/g)).length) >= 80){
-		alert("hello");
 		var documentPage = document.getElementById('startButton');
 		documentPage.innerHTML = '<input id="startGame" type="button" value="Start Game" onclick="doFunction()" />';
 	}

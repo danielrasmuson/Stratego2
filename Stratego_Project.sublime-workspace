@@ -4,12 +4,32 @@
 		"selected_items":
 		[
 			[
-				"padin",
+				"paddin",
 				"padding-top"
 			],
 			[
 				"margin",
 				"margin-top"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"ine",
+				"inline"
+			],
+			[
+				"new",
+				"newSquare"
+			],
+			[
+				"alert",
+				"alertFunc"
+			],
+			[
+				"padin",
+				"padding-top"
 			],
 			[
 				"padding",
@@ -183,11 +203,15 @@
 		"selected_items":
 		[
 			[
-				"cl",
+				"close",
 				"Project: Close"
 			],
 			[
-				"close",
+				"cose",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"cl",
 				"Project: Close"
 			],
 			[
@@ -488,16 +512,17 @@
 	[
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/boardList.js",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/boardlist.html",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/setup.html",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/Stratego_Project.sublime-project",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/setup.js",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/randomToDo.txt",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/master.css",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/Stratego_Project.sublime-project",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/fwrmbglx.ayi.txt",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/test.js",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/setup.js.orig",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/boardList.js.orig",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/randomToDo.txt",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/setup.css",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/setup.js",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/3pc1c3of.rns.txt",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/n3eguhu0.kx0.txt",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/e3ztwswy.g0o.txt",
@@ -612,12 +637,11 @@
 		"/C/Users/Daniel/Desktop/Premier Products Master Script.txt",
 		"/C/Users/Daniel/Desktop/RasmusonDView.txt",
 		"/C/Users/Daniel/Desktop/zoo2Results.txt",
-		"/C/Users/Daniel/Desktop/zoo2answers.txt",
-		"/C/Users/Daniel/Desktop/zoo2SQL.txt"
+		"/C/Users/Daniel/Desktop/zoo2answers.txt"
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -632,6 +656,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"swithc",
+			".8",
+			".5",
+			"35",
+			".35",
+			"block",
+			"div",
+			"alert",
 			"main",
 			"squareLi",
 			"boardList",
@@ -751,15 +783,7 @@
 			"spanStyleChanges",
 			"style",
 			"styleSectionFixes",
-			"font-size: [0-9](?![0-9])",
-			"inS",
-			"font-size: [0-9](?![0-9])",
-			"font-size: 1(?![0-9])",
-			"font-size: 1[?!0-9]",
-			"font-size",
-			"font",
-			"margin",
-			"insideList"
+			"font-size: [0-9](?![0-9])"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -799,7 +823,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 37.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -847,7 +871,7 @@
 	"project": "Stratego_Project.sublime-project",
 	"replace":
 	{
-		"height": 66.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -856,15 +880,31 @@
 		"selected_items":
 		[
 			[
-				"set",
-				"html\\setup.html"
+				"board",
+				"js\\boardList.js"
+			],
+			[
+				"boa",
+				"js\\boardList.js"
+			],
+			[
+				"bao",
+				"js\\boardList.js"
 			],
 			[
 				"boar",
 				"html\\boardlist.html"
 			],
 			[
-				"board",
+				"set",
+				"html\\setup.html"
+			],
+			[
+				"master",
+				"css\\master.css"
+			],
+			[
+				"bo",
 				"js\\boardList.js"
 			],
 			[
@@ -874,10 +914,6 @@
 			[
 				"maste",
 				"css\\master.css"
-			],
-			[
-				"bo",
-				"html\\boardlist.html"
 			],
 			[
 				"bor",
@@ -898,10 +934,6 @@
 			[
 				"setup.js",
 				"js\\setup.js"
-			],
-			[
-				"boa",
-				"js\\boardList.js"
 			],
 			[
 				"mas",
