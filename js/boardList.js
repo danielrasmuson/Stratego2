@@ -1,6 +1,7 @@
 function setupClick(){
     "use strict";
     var squareList=document.getElementById("squareList");
+    // These are for once we have setup completely set up 
     squareList.onclick=function(e){
         deleteAllDots();
         if(colorOfClick(e.target.id) == localStorage.getItem("turn")){
@@ -11,7 +12,6 @@ function setupClick(){
         }
     };
 }
-
 window.onload=function(){
     // // ENABLE START GAME BUTTON RETRIEVE FROM SETUP.HTML
     // var setupResults = localStorage.getItem('testObject')
