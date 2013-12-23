@@ -1,8 +1,6 @@
 function setupClick(){
     "use strict";
     var squareList=document.getElementById("squareList");
-
-
     squareList.onclick=function(e){
         deleteAllDots();
         if(colorOfClick(e.target.id) == localStorage.getItem("turn")){
@@ -22,7 +20,6 @@ window.onload=function(){
     // flipPieces("red");
     // alert("Blue goes first, don't look red!");
     // flipPieces("blue");
-    
     setupClick();
 };
 
