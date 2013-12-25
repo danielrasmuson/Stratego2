@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"pre",
+				"premadeLI"
+			],
+			[
+				"getElem",
+				"getElementsByTagName"
+			],
+			[
+				"fun",
+				"functionCall"
+			],
+			[
+				"documetn",
+				"documentPage"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"doc",
+				"documentPage"
+			],
+			[
+				"ac",
+				"activateDotBoard"
+			],
+			[
+				"s",
+				"startPoint"
+			],
+			[
+				"active",
+				"activateDot"
+			],
+			[
+				"setu",
+				"setupList"
+			],
+			[
+				"setup",
+				"setupType"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
 				"paddin",
 				"padding-top"
 			],
@@ -32,10 +84,6 @@
 				"padding-top"
 			],
 			[
-				"padding",
-				"padding-bottom"
-			],
-			[
 				"wid",
 				"width"
 			],
@@ -54,10 +102,6 @@
 			[
 				"play",
 				"playerColor"
-			],
-			[
-				"setu",
-				"setupOnClick"
 			],
 			[
 				"red",
@@ -140,10 +184,6 @@
 				"spanStyle"
 			],
 			[
-				"s",
-				"squareList"
-			],
-			[
 				"re",
 				"replaceWith"
 			],
@@ -158,10 +198,6 @@
 			[
 				"clea",
 				"cleanedLine"
-			],
-			[
-				"in",
-				"insideStyle"
 			],
 			[
 				"ins",
@@ -196,15 +232,39 @@
 	"buffers":
 	[
 	],
-	"build_system": "",
+	"build_system": "Packages/User/JavaMine.sublime-build",
 	"command_palette":
 	{
 		"height": 375.0,
 		"selected_items":
 		[
 			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
 				"close",
 				"Project: Close"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"title",
+				"Convert Case: Title Case"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"cal",
+				"Calculate"
 			],
 			[
 				"git diff",
@@ -227,10 +287,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
 				"instal",
 				"Package Control: Install Package"
 			],
@@ -241,10 +297,6 @@
 			[
 				"cl",
 				"Project: Close"
-			],
-			[
-				"cal",
-				"Calculate"
 			],
 			[
 				"disab",
@@ -415,10 +467,6 @@
 				"SQLExec: Show Table Records"
 			],
 			[
-				"title",
-				"Convert Case: Title Case"
-			],
-			[
 				"uper",
 				"SublimeREPL: Perl"
 			],
@@ -495,7 +543,7 @@
 				"SublimeREPL: Python - IPython"
 			]
 		],
-		"width": 386.0
+		"width": 522.0
 	},
 	"console":
 	{
@@ -518,21 +566,24 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/setup.js",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/setup.css",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/setup.html",
+		"/C/Users/Daniel/Desktop/HelloWorldApp.java",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/JSHint Gutter/.jshintrc",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/boardList.js",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/master.css",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/boardlist.html",
+		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/randomToDo.txt",
+		"/C/Users/Daniel/Desktop/delete.js",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/COMMIT_EDITMSG.COMMIT_EDITMSG",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/COMMIT_EDITMSG.COMMIT_EDITMSG",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/boardlist.html",
 		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/html/setup.html",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/setup.js",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/randomToDo.txt",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/master.css",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/Stratego_Project.sublime-project",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/fwrmbglx.ayi.txt",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/test.js",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/setup.js.orig",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/js/boardList.js.orig",
-		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/css/setup.css",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/3pc1c3of.rns.txt",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/n3eguhu0.kx0.txt",
 		"/C/Users/Daniel/Documents/GitHub/stratego_11-23/Stratego2/e3ztwswy.g0o.txt",
@@ -624,7 +675,6 @@
 		"/C/Users/Daniel/floobits/share/danielrasmuson/share_me/newFile.js",
 		"/C/Users/Daniel/floobits/share/danielrasmuson/share_me/html/setup.html",
 		"/C/Users/Daniel/floobits/msgs.floobits.log",
-		"/C/Users/Daniel/Desktop/delete.js",
 		"/C/Users/Daniel/Desktop/boardlist.html",
 		"/C/Users/Daniel/Desktop/javascriptDebugging.js",
 		"/C/Users/Daniel/Desktop/Zoo3_Due_Tuesday/Zoo+Questions+3.doc",
@@ -643,9 +693,7 @@
 		"/C/Users/Daniel/Desktop/Stratego/html/boardlist.html",
 		"/C/Users/Daniel/Desktop/canddelete/country.py",
 		"/C/Users/Daniel/Desktop/canddelete/countryTest.py",
-		"/C/Users/Daniel/Desktop/davidAllen.py",
-		"/C/Users/Daniel/Desktop/Premier Products Master Script.txt",
-		"/C/Users/Daniel/Desktop/RasmusonDView.txt"
+		"/C/Users/Daniel/Desktop/davidAllen.py"
 	],
 	"find":
 	{
@@ -664,6 +712,78 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"todo",
+			"startgame",
+			"switchSetup",
+			"replace(\"</ul>\",\"\"",
+			"li>",
+			"li",
+			"\\n",
+			"var",
+			"documentPage",
+			"Submit",
+			"document.getElementById('premade')",
+			"\"",
+			"\"s",
+			"\"",
+			"documentPage.innerHTML+",
+			"ocument.getElementById('premade'",
+			"documentPage.innerHTML = ",
+			"documentPage.innerHTML = documentPage.innerHTML+'<li><input id=\"startGame\" type=\"button\" value=\"Start Game\" onclick=\"startGame()\" /></li>';",
+			").getElementsByTagName('ul')",
+			"redTurn",
+			"('red','defensive')",
+			"premade",
+			"document.getElementById('premade')",
+			"getele",
+			"getElement",
+			"witchSetup\" type=\"button\" value=\"Submit\" onclick=\"redTurn()",
+			"startGame",
+			"<input id=\"startGame\" type=\"button\" value=\"Start Game\" onclick=\"startGame()\" />",
+			"redturn",
+			"5",
+			"blank",
+			"'",
+			"startGame",
+			"doFunction",
+			"activateDot",
+			"j",
+			"use strict",
+			"^",
+			",",
+			"Offensive",
+			"offensive",
+			"^",
+			" ",
+			"F",
+			"B",
+			"^",
+			"\"",
+			",",
+			"defensive",
+			"Offensive",
+			"offensive",
+			"Defensive",
+			"^",
+			" ",
+			"F",
+			"B",
+			"\n	{\n	a",
+			"{",
+			"idname",
+			"40",
+			"lines",
+			"blue",
+			"blue8",
+			"script",
+			"-",
+			">",
+			"\"",
+			"<li>",
+			"    ",
+			"()\"",
+			"3",
+			".35",
 			"swithc",
 			".8",
 			".5",
@@ -719,79 +839,7 @@
 			"padding",
 			"\"",
 			"\\n",
-			"\"",
-			"\\n",
-			"\"",
-			"\\n",
-			"\"",
-			"\\n",
-			"<br>",
-			"TODO",
-			"(!?@)TODO",
-			"todo",
-			"\"",
-			"\\n",
-			"\"",
-			"\\n",
-			"header",
-			"\"",
-			"\\n",
-			"\"",
-			"\\n",
-			"100",
-			"h1",
-			"images",
-			"src=\"images",
-			"secRepl",
-			"font-size",
-			"yle=\"font-size",
-			"$",
-			"owNumber =",
-			"font-size: (\\d)(\\d)(?!px)",
-			"font-size:(\\d)",
-			"font-size:\\d",
-			"font-size:(?! )(\\d)(\\d)(?!px)",
-			"font-size:(?! )\\d\\d(?!px)",
-			"(!?font-size:(?! )\\d\\d(?!px))",
-			"font-size:(?! )\\d\\d(?!px)",
-			"font-size: \\d\\d(?!px)",
-			"font-size: \\d\\d(?px)",
-			"\\d(?",
-			"\\d",
-			"25",
-			"^.+?Stage",
-			"-",
-			"\\n",
-			"^.",
-			".",
-			"#",
-			"^.",
-			"^[1-5].",
-			"drawLine",
-			" dy",
-			"dy",
-			"canvas",
-			"print",
-			"datetime",
-			"birthday",
-			"20081220",
-			"setBirthDate",
-			"getBirthDate",
-			"birthDate",
-			"deleteAlldots",
-			": ",
-			"moveCircle",
-			"delete",
-			"//(?! )",
-			"styleChanges",
-			"[0-9]",
-			"inS",
-			"ins",
-			"inS",
-			"spanStyleChanges",
-			"style",
-			"styleSectionFixes",
-			"font-size: [0-9](?![0-9])"
+			"\""
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -799,6 +847,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			"documentPage.innerHTML = (documentPage.innerHTML).replace(\"</ul>\",\"\")+'<li><input id=\"switchSetup\" type=\"button\" value=\"Submit\" onclick=\"redTurn()\" /></li></ul>';",
 			"font-size: $1$2px\"",
 			"font-size: $1",
 			"font-size: $1$2px",
@@ -879,7 +928,7 @@
 	"project": "Stratego_Project.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -888,31 +937,43 @@
 		"selected_items":
 		[
 			[
-				"board",
-				"js\\boardList.js"
+				"set",
+				"js\\setup.js"
+			],
+			[
+				"setu",
+				"html\\setup.html"
+			],
+			[
+				"maset",
+				"css\\master.css"
 			],
 			[
 				"boar",
 				"js\\boardList.js"
 			],
 			[
+				"setup",
+				"js\\setup.js"
+			],
+			[
+				"bo",
+				"html\\boardlist.html"
+			],
+			[
 				"boa",
 				"js\\boardList.js"
-			],
-			[
-				"bao",
-				"js\\boardList.js"
-			],
-			[
-				"set",
-				"html\\setup.html"
 			],
 			[
 				"master",
 				"css\\master.css"
 			],
 			[
-				"bo",
+				"board",
+				"js\\boardList.js"
+			],
+			[
+				"bao",
 				"js\\boardList.js"
 			],
 			[
@@ -930,14 +991,6 @@
 			[
 				"mast",
 				"css\\master.css"
-			],
-			[
-				"setu",
-				"css\\setup.css"
-			],
-			[
-				"setup",
-				"html\\setup.html"
 			],
 			[
 				"setup.js",
@@ -1120,6 +1173,10 @@
 		"selected_items":
 		[
 			[
+				"st",
+				"C:\\Users\\Daniel\\Documents\\GitHub\\stratego_11-23\\Stratego2\\Stratego_Project.sublime-project"
+			],
+			[
 				"als",
 				"C:\\Users\\Daniel\\Documents\\GitHub\\ALS_Ultimate\\ALS_Ultimate.sublime-project"
 			],
@@ -1164,7 +1221,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 210.0,
 	"status_bar_visible": true,
 	"template_settings":

@@ -90,10 +90,22 @@ ul li div{
     opacity: .5;
     width: 20px;
 }
-#startButton,
-#redTurn{
-    padding-left: 1100px;
-    -moz-transform:scale(5);
-    -webkit-transform:scale(5);
-    transform:scale(5);
+#premade{
+    position: absolute;
+    padding-top: 50px;
+    left: 1108px;
+    -moz-transform:scale(2.5);
+    -webkit-transform:scale(2.5);
+    transform:scale(2.5);
+}
+#premade ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+#pieceHolder div[id*="blankSquare"] {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 11%;
+    height: 4.15%;
 }

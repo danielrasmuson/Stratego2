@@ -1,26 +1,19 @@
 window.onload=function(){
-    "use strict";
-	var squareList=document.getElementById("squareList");
-	var pieceHolder =document.getElementById("pieceHolder");
-    
 	alert("Blue player setup");
-
 	setupOnClick("blue");
 };
 
-function doFunction(){
-	// flipPieces("red");
+function startGame(){
 	var listTextStr = document.getElementById('squareList').innerHTML;
 	localStorage.setItem('testObject', listTextStr);
 	window.location.assign("boardlist.html");
-	// document.write(pathname.boardlist.html);
 }
 
 function redTurn(){
 	flipPieces("blue");
 	setupOnClick("red");
-	var documentPage = document.getElementById('redTurn');
-	documentPage.innerHTML = '';
+    var setupDiv = document.getElementById('premade');
+    setupDiv.innerHTML = '<ul><li><input id="switchSetup" type="button" value="Defensive" onclick="premadeSetup(\'red\',\'defensive\')" /></li><li><input id="switchSetup" type="button" value="Offensive" onclick="premadeSetup(\'red\',\'offensive\')" /></li><li><input id="switchSetup" type="button" value="Hybrid" onclick="premadeSetup(\'red\',\'hybrid\')" /></li></ul>';
 }
 
 function setupOnClick(playerColor){
@@ -48,19 +41,18 @@ function sidePiecePlacement(pieceName, playerColor){
 	if (color == "blank") //makes sure we don't allow them to click on blank squares
 		return;
 
+    // @TODO can we combine activteDotBoard and active into one function?
+    function activateDotBoard(startPoint){
+        for(var i = startPoint; i < startPoint+40; i++){
+            activateDot(square, i, "sideToBoard");
+        }
+    }
+
 	if (color == "blue" && playerColor == "blue"){ // if it is a blue piece, only check the top half of the board
-	for(var i = 0; i < 40; i++)
-	{
-	activateDot(square, i, "sideToBoard");
+        activateDotBoard(0);
 	}
-	}
-
 	else if (color == "red" && playerColor == "red"){ // if it is a red piece, check the bottom part
-	for (var j = 60; j < 100; j++)
-	{
-	activateDot(square, j, "sideToBoard");
-	}
-
+        activateDotBoard(60);
 	}
 }
 
@@ -76,26 +68,22 @@ function boardPiecePlacement(pieceName, playerColor){
 
 	if (name == "blankSquare") //makes sure we don't allow them to click on blank squares
 		return;
+
+    function activate(startPoint,subtract){
+    for (var i = startPoint; i < startPoint+40; i++){
+        checkstatus(i-subtract, square);
+        if(i != square) //check so you don't put a dot on the piece you clicked on
+            activateDot(square, i, "boardToBoard");
+        }
+    }
 	
 	if (color == "blue" && playerColor == "blue"){ // if it is a blue piece, only check the top half of the board
-		for(var i = 0; i < 40; i++){
-			checkstatus(i, square);
-			if(i != square) //check so you don't put a dot on the piece you clicked on
-				activateDot(square, i, "boardToBoard");
-		}
-	}
-
-	else if (color == "red" && playerColor == "red"){ // if it is a red piece, check the bottom part
-		for (var j = 60; j < 100; j++){
-			checkstatus(j-20, square);
-			if(j != square) //check so you don't put a dot on the piece you clicked on
-				activateDot(square, j, "boardToBoard");
-			}
+        activate(0,0);
+    }
+    else if (color == "red" && playerColor == "red"){ // if it is a red piece, check the bottom part
+		activate(60,20);
 	}
 }
-
-
-
 function checkstatus(squareNumber, movedFromSquare){
     var lItems = document.getElementById("pieceHolder").getElementsByTagName("li");
     var currentSquare = (lItems[squareNumber].innerHTML).split('"').reverse()[1];
@@ -106,7 +94,6 @@ function checkstatus(squareNumber, movedFromSquare){
 }
 
 function activateDot(movedFromSquare, movedToSquare, type){
-
 	var board = document.getElementById("squareList").getElementsByTagName("li");
 	var sideboard =  document.getElementById("pieceHolder").getElementsByTagName("li");
 	var currentHTML;
@@ -155,20 +142,20 @@ function dotClicked(movedFromSquare, movedToSquare, type){
 	movedToHTMLUpdated = movedToHTMLUpdated.replace(new RegExp('-(.*)-','g'),"-");
 	movedFromHTMLUpdated = movedFromHTMLUpdated.replace(new RegExp('-(.*)-','g'),"-");
 
-	if(type == "sideToBoard"){
-		sideboard[movedFromSquare].innerHTML = movedToHTMLUpdated;
-		board[movedToSquare].innerHTML = movedFromHTMLUpdated;
-	}
-
-	else if(type == "boardToBoard"){
+	if(type == "boardToBoard"){
 		board[movedFromSquare].innerHTML = movedToHTMLUpdated;
 		board[movedToSquare].innerHTML = movedFromHTMLUpdated;
 	}
-
+    
 	else if (type == "boardToSide"){
 		board[movedFromSquare].innerHTML = movedToHTMLUpdated;
 		sideboard[movedToSquare].innerHTML = movedFromHTMLUpdated;
 	}
+
+    else if(type == "sideToBoard"){
+        sideboard[movedFromSquare].innerHTML = movedToHTMLUpdated;
+        board[movedToSquare].innerHTML = movedFromHTMLUpdated;
+    }
 
 	var squareList=document.getElementById('squareList');
 	var pieceHolder =document.getElementById('pieceHolder');
@@ -176,16 +163,14 @@ function dotClicked(movedFromSquare, movedToSquare, type){
 	var playerColor = colorOfClick(squareID1); //used to tell whose turn it is
 	var sideboardInner= pieceHolder.innerHTML;
 
-	if (((sideboardInner.match(/blankSquare/g)).length) >= 40 && playerColor == "blue"){
-		var documentPage = document.getElementById('redTurn');
-		documentPage.innerHTML = '<input id="switchSetup" type="button" value="Submit" onclick="redTurn()" />';
-	}
+	var documentPage = document.getElementById('premade');
+    if (((sideboardInner.match(/blankSquare/g)).length) >= 40 && playerColor == "blue"){
+        premadeButton("switchSetup","Submit","redTurn()")
+    }
 
-	if (((sideboardInner.match(/blankSquare/g)).length) >= 80){
-		var documentPage = document.getElementById('startButton');
-		documentPage.innerHTML = '<input id="startGame" type="button" value="Start Game" onclick="doFunction()" />';
+    if (((sideboardInner.match(/blankSquare/g)).length) >= 80){
+        premadeButton("startGame","Start Game","startGame()")
 	}
-
 	setupOnClick(playerColor);
 }
 
@@ -204,7 +189,6 @@ function colorOfClick(idname){
 }
 	
 function deleteAllDots(){
-    "use strict";
     // clear main board
     function deleteDots(elementGroup,size){
         var board = document.getElementById(elementGroup).getElementsByTagName("li");
@@ -220,9 +204,7 @@ function deleteAllDots(){
 }
 
 function flipPieces(color){
-    "use strict";
     var lines = document.getElementById("squareList").getElementsByTagName("li");
-    // var currentSquare = (lItems[squareNumber].innerHTML).split("\"").reverse()[1];
 
     for (var i = 0; i < 100; i++){
         var line = lines[i].innerHTML;
@@ -237,5 +219,55 @@ function flipPieces(color){
                 lines[i].innerHTML = line.replace(new RegExp("/(.*)png","g"),"/images/pieces/"+color+"Back.png");
             }
         }
+    }
+}
+
+function premadeButton(id,value,functionCall){
+    var premadeDiv = document.getElementById('premade');
+    var premadeLI = premadeDiv.getElementsByTagName('li');
+    var button = "<input id=\""+id+"\" value=\""+value+"\" onclick=\""+functionCall+"\" type=\"button\">" ;
+    
+    // is it already on the board?
+    for (var i = 0; i < premadeLI.length;i++){
+        if (premadeLI[i].innerHTML == button){
+            return; // just to exit
+        }
+    }
+
+    //if not put it on the board
+    premadeDiv.innerHTML = (premadeDiv.innerHTML).replace("</ul>","")+"<li>"+button+'</li></ul>';
+}
+
+function premadeSetup(color, setupType){ 
+   var setupList = [];
+    if (setupType == "defensive"){
+        setupList = ["8", "8", "8", "9", "6", "9", "4", "Flag", "5", "5", "9", "9", "8" , "6", "Bomb", "Bomb", "6", "4", "4", "5", "8", "1", "6", "Bomb", "7", "7", "Bomb", "3", "Spy", "3", "9", "9", "Bomb", "7", "9", "9", "7", "Bomb", "2", "5"];
+    }
+    else if (setupType == "offensive"){
+        setupList = ["Bomb", "6", "8", "5", "7", "8", "4", "Bomb", "7", "Flag", "8", "9", "Bomb", "Spy", "5", "Bomb", "6", "9", "Bomb", "7", "4", "8", "9", "8", "9", "3", "5", "4", "1", "Bomb", "9", "6", "2", "9", "3", "9", "6", "7", "9", "5"];
+    }
+    else if (setupType == "hybrid"){
+        setupList = ["9", "8", "8", "9", "6", "Bomb", "Flag", "Bomb", "5", "8", "7", "5", "9", "8", "5", "4", "3", "6", "7", "7", "4", "Bomb", "7", "6", "5", "Bomb", "6", "4", "Bomb", "Bomb", "9", "2", "Spy", "3", "9", "9", "8", "1", "9", "9"];
+    }
+
+    if (color == "blue"){
+        premadeButton("switchSetup","Submit","redTurn()");
+        setupOnClick("blue");
+    }
+    var range = 0;
+    var range2 = 0;
+    if (color == "red"){
+        range = 60;
+        range2 = 40;
+        setupList.reverse();
+        premadeButton("startGame","Start Game","startGame()");
+        setupOnClick("red");
+    }
+
+    var boardLines = document.getElementById("squareList").getElementsByTagName("li");
+    var sideLines = document.getElementById("pieceHolder").getElementsByTagName("li");
+    for (var i = 0; i < setupList.length; i++){
+        boardLines[i+range].innerHTML = "<img src=\"../images/pieces/"+color+setupList[i]+".png\" id=\""+color+setupList[i]+"-"+(i+range)+"\">";
+        sideLines[i+range2].innerHTML = "<div id=\"blankSquare-"+(i+range2)+"\"></div>";
     }
 }

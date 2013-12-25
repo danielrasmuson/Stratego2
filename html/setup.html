@@ -195,9 +195,13 @@
 	<li><img src="../images/pieces/redFlag.png" id="redFlag-78"></li>
 	<li><img src="../images/pieces/redSpy.png" id="redSpy-79"></li>
 </ul>
-<div id="startButton"></div>
-<div id="redTurn"></div>
-<!-- <div input id="submitButton" type="button" value="Submit" onclick="redTurn();"></div> -->
+<div id="premade">
+	<ul>
+		<li><input id="switchSetup" type="button" value="Defensive" onclick="premadeSetup('blue','defensive')" /></li>
+		<li><input id="switchSetup" type="button" value="Offensive" onclick="premadeSetup('blue','offensive')" /></li>
+		<li><input id="switchSetup" type="button" value="Hybrid" onclick="premadeSetup('blue','hybrid')" /></li>
+	</ul>
+</div>
 
- </body>
+</body>
 </html>

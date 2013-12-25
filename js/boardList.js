@@ -13,13 +13,13 @@ function setupClick(){
     };
 }
 window.onload=function(){
-    // // ENABLE START GAME BUTTON RETRIEVE FROM SETUP.HTML
-    // var setupResults = localStorage.getItem('testObject')
-    // squareList.innerHTML = setupResults;
+    // ENABLE START GAME BUTTON RETRIEVE FROM SETUP.HTML
+    var setupResults = localStorage.getItem('testObject')
+    squareList.innerHTML = setupResults;
     localStorage.setItem("turn", "blue");
-    // flipPieces("red");
-    // alert("Blue goes first, don't look red!");
-    // flipPieces("blue");
+    flipPieces("red");
+    alert("Blue goes first, don't look red!");
+    flipPieces("blue");
     setupClick();
 };
 
